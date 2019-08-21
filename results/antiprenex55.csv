@@ -1,0 +1,6 @@
+operation;operand1;size1;operand2;size2;result;resultsize;minresult;minsize;fv
+proj;Alpha;5;0x0;-1;Bravo;5;Charlie;3;
+&;Delta;5;Echo;5;Foxtrot;9;Golf;5;
+&;Charlie;3;Golf;5;Hotel;5;India;5;
+proj;India;5;0x0;-1;Juliett;5;Kilo;5;
+proj;Kilo;5;0x0;-1;Lima;3;Mike;3;
