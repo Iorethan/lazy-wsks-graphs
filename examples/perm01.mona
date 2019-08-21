@@ -1,0 +1,4 @@
+# Validity: valid
+
+ws2s;
+all2 Z1: ex2 X2, X1: ((ex2 Z: Z = Z1.0 & Z sub X1) & (ex2 A: A = X1.0 & A sub X2));

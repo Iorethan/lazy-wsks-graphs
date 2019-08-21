@@ -1,0 +1,9 @@
+# Validity: unsatisfiable
+
+ws2s;
+
+pred edge1(var2 X,Y) = ex2 Z: Z = X.0 & Z sub Y;
+pred edge2(var2 X,Y) = ex2 Z: Z = X.1 & Z sub Y;
+pred edge(var2 X,Y) = edge1(X,Y) | edge2(X,Y);
+
+all2 Z2, Z1: ex2 X2, X1: edge(Z1, X1) & edge(X1, X2) & edge(X2, Z2);

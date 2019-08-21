@@ -1,0 +1,4 @@
+# Validity: valid
+
+ws2s;
+((true | true) & false) => false;

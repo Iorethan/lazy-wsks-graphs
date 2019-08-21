@@ -1,0 +1,4 @@
+# Validity: unsatisfiable
+
+ws2s;
+ex2 X, Y: (sing Y & ~(eps Y) & eps X & X sub Y);

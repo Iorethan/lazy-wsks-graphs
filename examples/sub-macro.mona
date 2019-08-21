@@ -1,0 +1,7 @@
+# Validity: unsatisfiable
+
+ws2s;
+
+pred ownsub(var2 X,Y) = X sub Y;
+
+ex2 A,B: ownsub(A,B) & ownsub(B,A) & A ~= B;

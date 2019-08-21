@@ -1,0 +1,3 @@
+ws2s;
+
+ex2 X0, X1, X2: all2 Y1, Y2: ((X0 = Y1.0 & X0 sub Y2) => Y1 = Y2) &((X1 = Y1.0 & X1 sub Y2) => Y1 = Y2) &((X2 = Y1.0 & X2 sub Y2) => Y1 = Y2) ;

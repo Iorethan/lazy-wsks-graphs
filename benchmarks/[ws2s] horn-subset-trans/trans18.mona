@@ -1,0 +1,3 @@
+ws2s;
+
+ex2 X0, X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, X11, X12, X13, X14, X15, X16, X17: X0 sub X1 & X1 sub X2 & X2 sub X3 & X3 sub X4 & X4 sub X5 & X5 sub X6 & X6 sub X7 & X7 sub X8 & X8 sub X9 & X9 sub X10 & X10 sub X11 & X11 sub X12 & X12 sub X13 & X13 sub X14 & X14 sub X15 & X15 sub X16 & X16 sub X17 ; 

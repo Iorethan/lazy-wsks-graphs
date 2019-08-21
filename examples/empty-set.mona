@@ -1,0 +1,5 @@
+# Validity: valid
+
+pred allsub(var2 X) = all2 Y: X sub Y;
+
+all2 X: ex1 x: (x in X | allsub(X));

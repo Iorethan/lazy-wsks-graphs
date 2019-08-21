@@ -1,0 +1,5 @@
+# Validity: valid
+
+ws2s;
+
+all2 X, Y: (eps X & Y=X.0) => sing Y;

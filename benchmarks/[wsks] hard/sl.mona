@@ -1,0 +1,49 @@
+# mona runs out of 2GB memory  on this input
+
+m2l-str;
+
+# Define the successor relation E
+macro E(var1 v1, var1 v2) = v1+1=v2;
+var1 y;
+var1 x;
+var1 z;
+var1 w;
+
+# Fields: define tree-node labels from field labels
+# Assert that root is not marked with F_f, for any field label f
+# Assert that f is a partial function
+var2  F_f, B_f, L_f;
+assert 0 notin F_f;
+assert 0 notin B_f;
+
+var2 F_fx;
+var2 F_fy;
+var2 F_fz;
+var2 F_fw;
+
+pred f(var1 v1, var1 v2) = (E(v1,v2) & v2 in F_f) | (E(v2,v1) & v2 in B_f) | (v1=v2 & v1 in L_f)
+    |( v2 = y & v1 in F_fy)
+    |( v2 = z & v1 in F_fz)
+# Comment out the next line and mona terminates successfully
+    |( v2 = w & v1 in F_fw)
+    |( v2 = x & v1 in F_fx);
+
+assert all1  v, v1, v2: f(v,v1) & f(v,v2) => v1 = v2;
+
+
+
+# Encode f-path from v1 to v2 in subheap H
+pred closed_f(var1 v1, var1 v2, var2 H) =
+        (all1  v : (v in H
+             & v~=v2
+            ) => (all1 v' : f(v,v') => (v' in H)))
+            & (v1 in H);
+pred path_f(var1  v1, v2) =
+            (ex2  H_path :
+            closed_f(v1, v2, H_path) & ( all2  H_other: closed_f(v1, v2, H_other) => H_path sub H_other)
+            & (v2 in H_path)) ;
+
+
+# Main Formula
+  path_f(x, y)
+;

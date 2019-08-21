@@ -1,0 +1,5 @@
+# Validity: valid
+
+ws2s;
+
+all2 X, Y: (X sub Y & Y sub X) => X = Y;

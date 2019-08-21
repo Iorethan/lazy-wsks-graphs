@@ -1,0 +1,14 @@
+# MONA Presburger predicates
+
+pred singl(var2 X) = all1 x,y: (x in Y & y in X) => x = y;
+
+# addition relation (p "+" q = r)
+pred plus(var2 p,q,r) =
+ex2 c:                                                  # carry track
+  0 notin c                                             # no carry-sub
+& all2 t: singl(t) &
+    (t+1 sub c <=> ((t sub p & t sub q) | (t sub p & t sub c) | (t sub q & t sub c)))
+  & (t sub r <=>  (((t sub p) & ~(t sub q) | ~(t sub p) & (t sub q)) & ~(t sub c)) | (~((t sub p) & ~(t sub q) | ~(t sub p) & (t sub q)) & t sub c));
+
+#var2 x,y,z;
+ex2 x,y,z: plus(x,y,z);

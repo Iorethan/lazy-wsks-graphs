@@ -1,0 +1,3 @@
+ws2s;
+
+all2 X: ex2 X1: ex2 X2: (X1 sub X => X2 sub X); 

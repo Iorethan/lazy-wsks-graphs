@@ -1,0 +1,5 @@
+# Validity: unsatisfiable
+
+ws2s;
+
+all2 X,Y: X~=Y;
