@@ -18,7 +18,8 @@ from graphviz import Digraph
 
 TIMEOUT = 300 #in seconds
 FORMULAS = 20
-ONLY_SHOW_MINIMIZED = True
+SHOW_MINIMIZED = True
+USE_HUMAN_READABLE_NAMES = False
 
 
 def main():
@@ -82,7 +83,8 @@ def parse_mona(output, known_addresses):
             res = res + "{0}\n".format(format_op("|", parse))
         if line.startswith("Projecting"):
             parse = parse_mona_projection(lines[i+3:i+5], known_addresses)
-            fv = dfa_fv(lines[i+6:])
+            logic = "ws1s" if lines[i+5] == "Resulting DFA:" else "ws2s"
+            fv = get_fv(lines[i+6:], logic)
             parse.append(','.join(fv))
             res = res + "{0}\n".format(format_op("proj", parse))
     return res
@@ -90,11 +92,13 @@ def parse_mona(output, known_addresses):
 
 def proc_product(lines, i, known_addresses):
     parse = parse_mona_product(lines[i+3:i+5], known_addresses)
+    logic = "ws1s" if lines[i+5] == "Resulting DFA:" else "ws2s"
     j = i+6
     if parse is None:
         parse = parse_mona_product(lines[i+1:i+3], known_addresses)
+        logic = "ws1s" if lines[i+3] == "Resulting DFA:" else "ws2s"
         j = i+4
-    fv = dfa_fv(lines[j:])
+    fv = get_fv(lines[j:], logic)
     parse.append(','.join(fv))
     return parse
 
@@ -123,14 +127,24 @@ def parse_mona_projection(lines, known_addresses):
     return res
 
 
-def dfa_fv(lines):
+def get_fv(lines, parser):
     fv = set()
-    for line in lines[5:]:
-        ret = parse_dfa_trans(line)
-        if ret is None:
-            break
-        _, sym, _ = ret
-        fv = fv.union(symbols_free_vars(sym))
+    if parser == "ws1s":
+        for line in lines[5:]:
+            ret = parse_dfa_trans(line)
+            if ret is None:
+                break
+            _, sym, _ = ret
+            fv = fv.union(symbols_free_vars(sym))
+    else:
+        for line in lines[3:]:
+            if line == "" or re.match("(State space.*)|(Initial state:.*)|(Transitions:)", line) is not None:
+                continue
+            ret = parse_gta_trans(line)
+            if ret is None:
+                break
+            _, sym, _ = ret
+            fv = fv.union(symbols_free_vars(sym))
     return fv
 
 
@@ -139,6 +153,18 @@ def parse_dfa_trans(line):
     if match is None:
         return None
     fr, label, to = int(match.group(1)), match.group(2), match.group(3)
+    if label.strip() == "":
+        syms = []
+    else:
+        syms = label.split(", ")
+    return fr, syms, to
+
+
+def parse_gta_trans(line):
+    match = re.search(r"^\(([0-9]+,[0-9]+,)([^->]*)\) -> ([0-9]+)$", line)
+    if match is None:
+        return None
+    fr, label, to = match.group(1), match.group(2), match.group(3)
     if label.strip() == "":
         syms = []
     else:
@@ -156,7 +182,11 @@ def symbols_free_vars(syms):
 def address_to_name(address, known_addresses):
     if address not in known_addresses:
         known_addresses.append(address)
-    return make_human_readable(known_addresses.index(address))
+    if USE_HUMAN_READABLE_NAMES:
+        name = make_human_readable(known_addresses.index(address))
+    else:
+        name = address
+    return name
 
 
 def make_human_readable(id):
@@ -213,24 +243,24 @@ def check_children(graph, names, node):
 
 
 def process_projection(graph, names, node):
-    if ONLY_SHOW_MINIMIZED:
-        create_unary_node(graph, node[6], node[7], "", node[0], "proj")
-        names.add(node[6])
-    else:
-        create_unary_node(graph, node[4], node[5], "", node[0], "proj")
+    if SHOW_MINIMIZED:
+        create_unary_node(graph, node[4], node[5], node[8], node[0], "proj")
         names.add(node[4])
         create_unary_node(graph, node[6], node[7], node[8], node[4], "min")
+        names.add(node[6])
+    else:
+        create_unary_node(graph, node[6], node[7], node[8], node[0], "proj")
         names.add(node[6])
 
     
 def process_product(graph, names, node, operation):
-    if ONLY_SHOW_MINIMIZED:
-        create_binary_node(graph, node[6], node[7], "", node[0], node[2], operation)
-        names.add(node[6])
-    else:
-        create_binary_node(graph, node[4], node[5], "", node[0], node[2], operation)
+    if SHOW_MINIMIZED:
+        create_binary_node(graph, node[4], node[5], node[8], node[0], node[2], operation)
         names.add(node[4])
         create_unary_node(graph, node[6], node[7], node[8], node[4], "min")
+        names.add(node[6])
+    else:
+        create_binary_node(graph, node[6], node[7], node[8], node[0], node[2], operation)
         names.add(node[6])
 
 

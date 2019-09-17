@@ -1,0 +1,3 @@
+# Validity: valid
+
+ex2 X1, X2, Y: X1 sub Y & X2 sub Y;
