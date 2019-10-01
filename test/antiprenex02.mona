@@ -1,4 +1,3 @@
 # Validity: valid
 
-ws2s;
 ex2 X, X1, X2, X3: ~(X1 sub X & X2 sub X & X3 sub X);

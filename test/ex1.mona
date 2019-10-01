@@ -1,0 +1,4 @@
+# Validity: valid
+
+var1 x, y;
+ex2 X: x < y & ~(y >= x) & {0} sub X;
