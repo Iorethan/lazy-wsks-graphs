@@ -25,13 +25,11 @@ def main():
     output_folder = sys.argv[4]
 
     cnt = 0
-    with os.scandir(benchmark_folder) as folder:
-        for item in folder:
-            cnt += 1
+    for item in os.scandir(benchmark_folder):
+        cnt += 1
 
-    folder = os.scandir(benchmark_folder)
     i = 0
-    for item in folder:
+    for item in os.scandir(benchmark_folder):
         i += 1
         print(str(i) + "/" + str(cnt) + "\t" + item.name)
         if item.is_dir():
