@@ -4,6 +4,7 @@
  Script for automated collecting statistics about the formula construction.
  @title mona-stat.py
  @author Vojtech Havlena, July 2019
+ @author Ondřej Valeš, 2019
 """
 
 import sys
@@ -12,9 +13,8 @@ import subprocess
 import string
 import re
 import os
-import os.path
 import resource
-from graphviz import Digraph
+import graphviz
 
 TIMEOUT = 300 #in seconds
 FORMULAS = 20
@@ -23,15 +23,16 @@ SHOW_NAMES = True
 
 
 def main():
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 4:
         help_err()
         sys.exit()
 
     monabin = sys.argv[1]
     formulafolder = sys.argv[2]
+    resultfolder = sys.argv[3]
 
     try:
-        opts, _ = getopt.getopt(sys.argv[3:], "f:", ["formulas="])
+        opts, _ = getopt.getopt(sys.argv[4:], "f:", ["formulas="])
     except getopt.GetoptError as _:
         help_err()
         sys.exit()
@@ -58,8 +59,16 @@ def main():
             mona_parse = "TO"
         except subprocess.CalledProcessError as _:
             mona_parse = "None"
-        print_graph(filename, "", mona_parse, names)
-        print_output(filename, "", mona_parse, names)
+        data = list(map(lambda x: x.split(';'), mona_parse.split('\n')[:-1]))
+        fix_variables(data, names)
+        mona_parse = '\n'.join([';'.join(item) for item in data])
+        print_graph(filename, resultfolder, "", data, names)
+        print_output(filename, resultfolder, "", mona_parse, names)
+
+
+def fix_variables(data, names):
+    for i in range(len(data)):
+        data[i][9] = ','.join(names[data[i][7]][2])
 
 
 def format_op(op, params):
@@ -68,10 +77,12 @@ def format_op(op, params):
         res = res + ";{0}".format(par)
     return res
 
+
 def format_init(names):
     res = ""
     for id in names:
-        res = res + "init;0x0;-1;0x0;-1;0x0;-1;" + id + ";" + names[id][1] + ";" + ','.join(names[id][2]) + ";\n"
+        if names[id][3]:
+            res = res + "init;0x0;-1;0x0;-1;0x0;-1;" + id + ";" + names[id][1] + ";" + ','.join(names[id][2]) + ";\n"
     return res
 
 
@@ -90,7 +101,8 @@ def parse_mona(output):
         if is_initial_automaton(line):
             proc_init(lines, i, names, variables)
         if line.startswith("Copying"):
-            proc_copy(lines, i, names)
+            parse = proc_copy(lines, i, names)
+            res = res + "{0}\n".format(format_op("copy", parse))
         if line.startswith("Replacing indices"):
             proc_replace(lines, i, names)
         if line.startswith("  Minimizing"):
@@ -156,7 +168,7 @@ def proc_init(lines, i, names, variables):
     logic = "ws1s" if lines[i+2] == "Resulting DFA:" else "ws2s"
     fv = get_fv(lines[i+3:], logic)
     fv = replace_names(fv, variables)
-    names[id] = [name, size, fv]
+    names[id] = [name, size, fv, True]
 
 
 def replace_names(fv, variables):
@@ -164,10 +176,25 @@ def replace_names(fv, variables):
 
 
 def proc_copy(lines, i, names):
+    parse = parse_mona_copy(lines[i])
     match = re.match(r".*\(([0-9]+),([0-9]+),([0-9]+)\).*\(([0-9]+),([0-9]+),([0-9]+)\)", lines[i])
     orig, copy = match.group(3), match.group(6)
     names[copy] = names[orig][:]
     names[copy][2] = names[copy][2].copy()
+    names[copy][3] = False
+    parse.append(','.join(names[copy][2]))
+    return parse
+
+
+def parse_mona_copy(line):
+    res = [None]*8
+    match = re.match(r".*\(([0-9]+),[0-9]+,([0-9]+)\).*\(([0-9]+),[0-9]+,([0-9]+)\)", line)
+    if match is None:
+        return None
+    res[0], res[1], res[2] = match.group(2), match.group(1), "0x0"
+    res[3], res[4], res[5] = -1, "0x0", -1
+    res[6], res[7] = match.group(4), match.group(3)
+    return res
 
 
 def proc_replace(lines, i, names):
@@ -194,7 +221,7 @@ def proc_minim(lines, i, names, variables):
     fv = replace_names(fv, variables)
     parse.append(','.join(fv))
     name = "min(" + names[parse[0]][0] + ")"
-    names[parse[6]] = [name, parse[7], fv]
+    names[parse[6]] = [name, parse[7], fv, False]
     return parse
 
 
@@ -222,8 +249,8 @@ def proc_product(lines, i, names, variables, operation):
     parse.append(','.join(fv))
     name = names[parse[0]][0] + " " + operation + " " + names[parse[2]][0]
     min_name = "min(" + name + ")"
-    names[parse[4]] = [name, parse[5], fv]
-    names[parse[6]] = [min_name, parse[7], fv]
+    names[parse[4]] = [name, parse[5], fv, False]
+    names[parse[6]] = [min_name, parse[7], fv, False]
     return parse
 
 
@@ -254,8 +281,8 @@ def parse_mona_projection(lines, i, names, variables, var):
     res.append(','.join(fv))
     name = "proj " + var + "(" + names[res[0]][0] + ")"
     min_name = "min(" + name + ")"
-    names[res[4]] = [name, res[5], fv]
-    names[res[6]] = [min_name, res[7], fv]
+    names[res[4]] = [name, res[5], fv, False]
+    names[res[6]] = [min_name, res[7], fv, False]
     return res
 
 
@@ -312,8 +339,7 @@ def symbols_free_vars(syms):
 
 
 def make_graph(name, data, names):
-    data = list(map(lambda x: x.split(';'), data.split('\n')[:-1]))
-    graph = Digraph(name)
+    graph = graphviz.Digraph(name)
     for item in data:
         if item[0] == 'init':
             process_initial(graph, names, item[1:])
@@ -321,6 +347,8 @@ def make_graph(name, data, names):
             process_minimization(graph, names, item[1:], item[0])
         elif item[0].startswith('proj'):
             process_projection(graph, names, item[1:], item[0])
+        elif item[0].startswith('copy'):
+            process_copy(graph, names, item[1:], item[0])
         else:
             process_product(graph, names, item[1:], item[0])
     return graph
@@ -343,6 +371,11 @@ def process_projection(graph, names, node, operation):
     else:
         create_unary_node(graph, node[6], min_name, node[7], node[8], node[0], "min + " + operation)
 
+
+def process_copy(graph, names, node, operation):
+    name = names[node[6]][0]
+    create_copy_node(graph, node[6], name, node[7], node[8], node[0], operation)
+
     
 def process_product(graph, names, node, operation):
     name = names[node[4]][0]
@@ -355,18 +388,23 @@ def process_product(graph, names, node, operation):
 
 
 def create_leaf_node(graph, name, label, size, free_vars):
-    graph.node(name, label=label + "\\nsize: " + size + "\\nfree: " + free_vars)
+    graph.node(name, label=label + "\\n" + size + " states\\n" + free_vars, tooltip=label)
 
 
 def create_unary_node(graph, name, label, size, free_vars, child, operation):
-    graph.node(name, label="size: " + size + "\\nfree: " + free_vars)
-    graph.edge(name, child, label=operation)
+    graph.node(name, label=size + " states\\n" + free_vars, tooltip=label)
+    graph.edge(name, child, label=operation, arrowhead="none")
+
+
+def create_copy_node(graph, name, label, size, free_vars, child, operation):
+    graph.node(name, label=free_vars, tooltip=label, shape="box")
+    graph.edge(child, name, label=operation, constraint="false", fontcolor="gray", color="gray")
 
 
 def create_binary_node(graph, name, label, size, free_vars, lchild, rchild, operation):
-    graph.node(name, label="size: " + size + "\\nfree: " + free_vars)
-    graph.edge(name, lchild, label="\"" + operation + "\"")
-    graph.edge(name, rchild, label="\"" + operation + "\"")
+    graph.node(name, label=size + " states\\n" + free_vars, tooltip=label)
+    graph.edge(name, lchild, label=graphviz.nohtml(operation), arrowhead="none")
+    graph.edge(name, rchild, label=graphviz.nohtml(operation), arrowhead="none")
 
 
 def print_config():
@@ -374,29 +412,32 @@ def print_config():
     print("Number of formulas: {0}".format(FORMULAS))
 
 
-def print_graph(filename, suf, data, names):
+def print_graph(filename, folder, suf, data, names):
     base = os.path.basename(filename)
     name = os.path.splitext(base)[0]
+    name = os.path.join(folder, name)
     graph = make_graph(name, data, names)
-    graph.save()
+    graph.render(filename=name, format="svg", cleanup=True)
+    graph.save(filename=name + ".dot")
     
 
-def print_output(filename, suf, output, names):
+def print_output(filename, folder, suf, output, names):
     base = os.path.basename(filename)
     name = os.path.splitext(base)[0]
+    name = os.path.join(folder, name)
     output = "operation;operand1;size1;operand2;size2;result;resultsize;minresult;minsize;fv\n" + output
     if SHOW_NAMES:
         res = ""
         for id, item in names.items():
             res = res + id + ";" + item[0] + ";\n"
-        output = output + "\nAutomata\nid;name;\n" + res
+        output = output + "\n\nAutomata\nid;name;\n" + res
     f = open(name + suf + ".csv", "w")
     f.write(output)
     f.close()
 
 
 def help_err():
-    sys.stderr.write("Bad input arguments. \nFormat: ./mona-stat.py [mona-bin] [formula folder]\n")
+    sys.stderr.write("Bad input arguments. \nFormat: ./mona-stat.py [mona-bin] [formula folder] [output folder]\n")
 
 
 if __name__ == "__main__":
