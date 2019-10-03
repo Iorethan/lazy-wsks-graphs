@@ -29,13 +29,13 @@ def main():
         for item in folder:
             cnt += 1
 
-    with os.scandir(benchmark_folder) as folder:
-        i = 0
-        for item in folder:
-            i += 1
-            print(str(i) + "/" + str(cnt) + "\t" + item.name)
-            if item.is_dir():
-                run_mona_stat(monabin, stat_py, benchmark_folder, item.name, output_folder)
+    folder = os.scandir(benchmark_folder)
+    i = 0
+    for item in folder:
+        i += 1
+        print(str(i) + "/" + str(cnt) + "\t" + item.name)
+        if item.is_dir():
+            run_mona_stat(monabin, stat_py, benchmark_folder, item.name, output_folder)
 
 
 def run_mona_stat(monabin, stat_py, benchmark_folder, folder, output_folder):
