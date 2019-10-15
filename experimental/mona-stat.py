@@ -16,13 +16,14 @@ import os
 import resource
 import graphviz
 
-TIMEOUT = 300 #in seconds
-FORMULAS = 20
+TIMEOUT = 3600 #in seconds
+FORMULAS = 400
 SHOW_MINIMIZED = True
 SHOW_NAMES = True
 
 
 def main():
+    global FORMULAS
     if len(sys.argv) < 4:
         help_err()
         sys.exit()
@@ -36,7 +37,6 @@ def main():
     except getopt.GetoptError as _:
         help_err()
         sys.exit()
-    FORMULAS = 20
 
     for o, a in opts:
         if o in ("-f", "--formulas"):
@@ -52,18 +52,25 @@ def main():
 
     for monafile in files:
         filename = os.path.join(formulafolder, monafile)
+        print(filename, end="")
+        sys.stdout.flush()
         try:
             mona_output = subprocess.check_output([monabin, "-i", filename], timeout=TIMEOUT).decode("utf-8")
             mona_parse, names, _ = parse_mona(mona_output)
         except subprocess.TimeoutExpired:
             mona_parse = "TO"
+            print("\TO")
+            continue
         except subprocess.CalledProcessError as _:
             mona_parse = "None"
+            print("\tERROR")
+            continue
         data = list(map(lambda x: x.split(';'), mona_parse.split('\n')[:-1]))
         fix_variables(data, names)
         mona_parse = '\n'.join([';'.join(item) for item in data])
         print_graph(filename, resultfolder, "", data, names)
         print_output(filename, resultfolder, "", mona_parse, names)
+        print("\tDONE")
 
 
 def fix_variables(data, names):
