@@ -59,7 +59,7 @@ def main():
             mona_parse, names, _ = parse_mona(mona_output)
         except subprocess.TimeoutExpired:
             mona_parse = "TO"
-            print("\TO")
+            print("\tTO")
             continue
         except subprocess.CalledProcessError as _:
             mona_parse = "None"
