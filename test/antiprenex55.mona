@@ -1,4 +1,0 @@
-# Validity: valid
-
-var2 X, X3;
-ex2 X1, X2: X1 sub X & X2 sub X & ex2 X: (X3 sub X);

@@ -16,7 +16,7 @@ import os
 import resource
 import graphviz
 
-TIMEOUT = 3600 #in seconds
+TIMEOUT = 10 #in seconds
 FORMULAS = 400
 SHOW_MINIMIZED = True
 SHOW_NAMES = True
