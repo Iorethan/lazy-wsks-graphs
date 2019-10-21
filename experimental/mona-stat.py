@@ -67,8 +67,9 @@ def main():
             continue
         data = list(map(lambda x: x.split(';'), mona_parse.split('\n')[:-1]))
         fix_variables(data, names)
-        mona_parse = '\n'.join([';'.join(item) for item in data])
         print_graph(filename, resultfolder, "", data, names)
+        add_all_freevars(data, names)
+        mona_parse = '\n'.join([';'.join(item) for item in data])
         print_output(filename, resultfolder, "", mona_parse, names)
         print("\tDONE")
 
@@ -76,6 +77,18 @@ def main():
 def fix_variables(data, names):
     for i in range(len(data)):
         data[i][9] = ','.join(names[data[i][7]][2])
+
+
+def add_all_freevars(data, names):
+    for i in range(len(data)):
+        data[i] = add_freevars(data[i], names)
+
+
+def add_freevars(data, names):
+    return [data[0], data[1], data[2], '' if data[1] == '0x0' else ','.join(names[data[1]][2]),
+            data[3], data[4], '' if data[3] == '0x0' else ','.join(names[data[3]][2]),
+            data[5], data[6], '' if data[5] == '0x0' else ','.join(names[data[5]][2]),
+            data[7], data[8], '' if data[7] == '0x0' else ','.join(names[data[7]][2])]
 
 
 def format_op(op, params):
@@ -179,7 +192,7 @@ def proc_init(lines, i, names, variables):
 
 
 def replace_names(fv, variables):
-    return set([variables[x] for x in fv])
+    return sorted([variables[x] for x in fv])
 
 
 def proc_copy(lines, i, names):
@@ -217,7 +230,8 @@ def proc_replace(lines, i, names):
     for item in replacements:
         names[id][0] = names[id][0].replace(item[0], item[1])
         names[id][2].remove(item[0])
-        names[id][2].add(item[1])
+        names[id][2].append(item[1])
+    names[id][2] = sorted(names[id][2])
 
 
 def proc_minim(lines, i, names, variables):
@@ -440,7 +454,7 @@ def print_output(filename, folder, suf, output, names):
     base = os.path.basename(filename)
     name = os.path.splitext(base)[0]
     name = os.path.join(folder, name)
-    output = "operation;operand1;size1;operand2;size2;result;resultsize;minresult;minsize;fv\n" + output
+    output = "operation;operand1;size1;fv1;operand2;size2;fv2;result;resultsize;fvr;minresult;minsize;fvm\n" + output
     if SHOW_NAMES:
         res = ""
         for id, item in names.items():
