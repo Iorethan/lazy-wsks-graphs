@@ -132,7 +132,7 @@ def parse_mona(output):
             res = res + "{0}\n".format(format_op("=>", parse))
             j = 6
         if line.startswith("Projecting"):
-            var = re.match("Projecting (#[0-9+])", line).group(1)
+            var = re.match("Projecting (#[0-9]+)", line).group(1)
             parse = parse_mona_projection(lines, i, names, variables, var)
             res = res + "{0}\n".format(format_op("proj " + var, parse))
             j = 6
@@ -256,7 +256,7 @@ def proc_product(lines, i, names, variables, operation):
     parse.append(','.join(fv))
     name = names[parse[0]][0] + " " + operation + " " + names[parse[2]][0]
     min_name = "min(" + name + ")"
-    names[parse[4]] = [name, parse[5], fv, False]
+    names[parse[4]] = [name, parse[5], fv.copy(), False]
     names[parse[6]] = [min_name, parse[7], fv, False]
     return parse
 
@@ -288,7 +288,7 @@ def parse_mona_projection(lines, i, names, variables, var):
     res.append(','.join(fv))
     name = "proj " + var + "(" + names[res[0]][0] + ")"
     min_name = "min(" + name + ")"
-    names[res[4]] = [name, res[5], fv, False]
+    names[res[4]] = [name, res[5], fv.copy(), False]
     names[res[6]] = [min_name, res[7], fv, False]
     return res
 
@@ -362,56 +362,64 @@ def make_graph(name, data, names):
 
 
 def process_initial(graph, names, node):
-    create_leaf_node(graph, node[6], names[node[6]][0], node[7], node[8])
+    create_leaf_node(graph, node[6], names[node[6]][0], node[7], ','.join(names[node[6]][2]))
 
 
 def process_minimization(graph, names, node, operation):
-    create_unary_node(graph, node[6], names[node[6]][0], node[7], node[8], node[0], "min")
+    create_unary_node(graph, node[6], names[node[6]][0], node[7], ','.join(names[node[6]][2]), node[0], "min")
 
 
 def process_projection(graph, names, node, operation):
     name = names[node[4]][0]
     min_name = names[node[6]][0]
     if SHOW_MINIMIZED:
-        create_unary_node(graph, node[4], name, node[5], node[8], node[0], operation)
-        create_unary_node(graph, node[6], min_name, node[7], node[8], node[4], "min")
+        create_unary_node(graph, node[4], name, node[5], ','.join(names[node[4]][2]), node[0], operation)
+        create_unary_node(graph, node[6], min_name, node[7], ','.join(names[node[6]][2]), node[4], "min")
     else:
-        create_unary_node(graph, node[6], min_name, node[7], node[8], node[0], "min + " + operation)
+        create_unary_node(graph, node[6], min_name, node[7], ','.join(names[node[6]][2]), node[0], "min + " + operation)
 
 
 def process_copy(graph, names, node, operation):
     name = names[node[6]][0]
-    create_copy_node(graph, node[6], name, node[7], node[8], node[0], operation)
+    create_copy_node(graph, node[6], name, node[7], ','.join(names[node[6]][2]), node[0], operation)
 
     
 def process_product(graph, names, node, operation):
     name = names[node[4]][0]
     min_name = names[node[6]][0]
     if SHOW_MINIMIZED:
-        create_binary_node(graph, node[4], name, node[5], node[8], node[0], node[2], operation)
-        create_unary_node(graph, node[6], min_name, node[7], node[8], node[4], "min")
+        create_binary_node(graph, node[4], name, node[5], ','.join(names[node[4]][2]), node[0], node[2], operation)
+        create_unary_node(graph, node[6], min_name, node[7], ','.join(names[node[6]][2]), node[4], "min")
     else:
-        create_binary_node(graph, node[6], min_name, node[7], node[8], node[0], node[2], operation)
+        create_binary_node(graph, node[6], min_name, node[7], ','.join(names[node[6]][2]), node[0], node[2], operation)
 
 
 def create_leaf_node(graph, name, label, size, free_vars):
-    graph.node(name, label=label + "\\n" + size + " states\\n" + free_vars, tooltip=label)
+    graph.node(name, label=label + "\\n" + format_node(name, size, free_vars), tooltip=label)
 
 
 def create_unary_node(graph, name, label, size, free_vars, child, operation):
-    graph.node(name, label=size + " states\\n" + free_vars, tooltip=label)
+    graph.node(name, label=format_node(name, size, free_vars), tooltip=label)
     graph.edge(name, child, label=operation, arrowhead="none")
 
 
 def create_copy_node(graph, name, label, size, free_vars, child, operation):
-    graph.node(name, label=free_vars, tooltip=label, shape="box")
+    graph.node(name, label=format_copy_node(name, size, free_vars), tooltip=label, shape="box")
     graph.edge(child, name, label=operation, constraint="false", fontcolor="gray", color="gray")
 
 
 def create_binary_node(graph, name, label, size, free_vars, lchild, rchild, operation):
-    graph.node(name, label=size + " states\\n" + free_vars, tooltip=label)
+    graph.node(name, label=format_node(name, size, free_vars), tooltip=label)
     graph.edge(name, lchild, label=graphviz.nohtml(operation), arrowhead="none")
     graph.edge(name, rchild, label=graphviz.nohtml(operation), arrowhead="none")
+
+
+def format_node(name, size, free_vars):
+    return size + " states\\n" + free_vars + "\\n" + name
+
+
+def format_copy_node(name, size, free_vars):
+    return free_vars + "\\n" + name
 
 
 def print_config():
