@@ -18,6 +18,7 @@ import graphviz
 
 TIMEOUT = 10 #in seconds
 FORMULAS = 400
+MAX_LABEL = 2000
 SHOW_MINIMIZED = True
 SHOW_NAMES = True
 
@@ -413,16 +414,22 @@ def create_leaf_node(graph, name, label, size, free_vars):
 
 
 def create_unary_node(graph, name, label, size, free_vars, child, operation):
+    global MAX_LABEL
+    label = label[:MAX_LABEL]
     graph.node(name, label=format_node(name, size, free_vars), tooltip=label)
     graph.edge(name, child, label=operation, arrowhead="none")
 
 
 def create_copy_node(graph, name, label, size, free_vars, child, operation):
+    global MAX_LABEL
+    label = label[:MAX_LABEL]
     graph.node(name, label=format_copy_node(name, size, free_vars), tooltip=label, shape="box")
     graph.edge(child, name, label=operation, constraint="false", fontcolor="gray", color="gray")
 
 
 def create_binary_node(graph, name, label, size, free_vars, lchild, rchild, operation):
+    global MAX_LABEL
+    label = label[:MAX_LABEL]
     graph.node(name, label=format_node(name, size, free_vars), tooltip=label)
     graph.edge(name, lchild, label=graphviz.nohtml(operation), arrowhead="none")
     graph.edge(name, rchild, label=graphviz.nohtml(operation), arrowhead="none")
