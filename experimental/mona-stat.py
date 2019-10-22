@@ -230,8 +230,9 @@ def proc_replace(lines, i, names):
     replacements.reverse()
     for item in replacements:
         names[id][0] = names[id][0].replace(item[0], item[1])
-        names[id][2].remove(item[0])
-        names[id][2].append(item[1])
+        if item[0] in names[id][2]:
+            names[id][2].remove(item[0])
+            names[id][2].append(item[1])
     names[id][2] = sorted(names[id][2])
 
 

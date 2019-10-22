@@ -12,7 +12,8 @@ import os
 BIN_OPERATIONS = {
     '&': 'and',
     '|': 'or',
-    '=>': 'impl'
+    '=>': 'impl',
+    '<=>': 'equiv'
 }
 
 UN_OPERATIONS = {
