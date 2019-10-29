@@ -74,7 +74,7 @@ def save_results(results):
     global UN_OPERATIONS
     for operation in BIN_OPERATIONS:
         with open(BIN_OPERATIONS[operation] + '.csv', 'w') as handle:
-            text = '\n'.join([';'.join(result) for result in results[operation]])
+            text = '\n'.join([';'.join(result) for result in results[operation]]) + '\n'
             handle.write(text)
 
 
