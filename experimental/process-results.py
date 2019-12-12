@@ -53,6 +53,10 @@ def process_file(lines, results):
         data = [line for line in lines if line[0].startswith(operation)]
         results[operation] = results.get(operation, default_bin()) +\
             [format_bin_operation(line[1:]) for line in data]
+    for operation in UN_OPERATIONS:
+        data = [line for line in lines if line[0].startswith(operation)]
+        results[operation] = results.get(operation, default_bin()) +\
+            [format_bin_operation(line[1:]) for line in data]
     return results
 
 
@@ -74,6 +78,10 @@ def save_results(results):
     global UN_OPERATIONS
     for operation in BIN_OPERATIONS:
         with open(BIN_OPERATIONS[operation] + '.csv', 'w') as handle:
+            text = '\n'.join([';'.join(result) for result in results[operation]]) + '\n'
+            handle.write(text)
+    for operation in UN_OPERATIONS:
+        with open(UN_OPERATIONS[operation] + '.csv', 'w') as handle:
             text = '\n'.join([';'.join(result) for result in results[operation]]) + '\n'
             handle.write(text)
 

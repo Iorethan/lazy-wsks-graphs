@@ -61,10 +61,12 @@ def main():
         except subprocess.TimeoutExpired:
             mona_parse = "TO"
             print("\tTO")
+            sys.stdout.flush()
             continue
         except subprocess.CalledProcessError as _:
             mona_parse = "None"
             print("\tERROR")
+            sys.stdout.flush()
             continue
         data = list(map(lambda x: x.split(';'), mona_parse.split('\n')[:-1]))
         fix_variables(data, names)
@@ -73,6 +75,7 @@ def main():
         mona_parse = '\n'.join([';'.join(item) for item in data])
         print_output(filename, resultfolder, "", mona_parse, names)
         print("\tDONE")
+        sys.stdout.flush()
 
 
 def fix_variables(data, names):
@@ -441,7 +444,7 @@ def format_node(name, size, free_vars):
 
 
 def format_copy_node(name, size, free_vars):
-    return free_vars + "\\n" + name
+    return size + " states\\n" + free_vars + "\\n" + name
 
 
 def print_config():
