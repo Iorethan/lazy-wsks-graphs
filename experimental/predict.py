@@ -166,7 +166,7 @@ class Formula:
         self.right = None
         self.fv = self.left._get_fv()
         self.fv.discard(self.var)
-        self.size = max(1, int(self.left.size * 0.83))
+        self.size = max(1, int(self.left.size * 0.81))
         self.total_size = self.size + self.left.total_size
     
 
@@ -177,7 +177,7 @@ class Formula:
         shared_vars = len(self.left.fv) + len(self.right.fv) - len(self.fv)
         shared_vars = min(shared_vars, MAX_SHARED[self.oper])
         self.size = PREDICT[self.oper][shared_vars](self.left.size * self.right.size)
-        self.size = max(1, int(self.size * 0.66))
+        self.size = max(1, int(self.size * 0.61))
         self.total_size = self.size + self.left.total_size + self.right.total_size
 
 
@@ -207,41 +207,22 @@ class Formula:
 
 def main():
     global FORMULAS
-    monabin, formulafolder, resultfolder = parse_args(sys.argv)
-    print_config()
-
-    files = get_files(formulafolder)
-    for monafile in files:
-        try:
-            filename = os.path.join(formulafolder, monafile)
-            mona_output = process_file(filename, monabin)      
-            formula = Formula(mona_output.split('\n')[-3])
-            if CREATE_FILES:
-                print_graph(filename, resultfolder, "", formula)
-                print("\tDONE")
-            else: print("\t{0}".format(formula.total_size))
-        except subprocess.CalledProcessError as _:
-            print("\tERROR")
-            continue
+    monabin, monafile = parse_args(sys.argv)
+    
+    try:
+        mona_output = process_file(monafile, monabin)      
+        formula = Formula(mona_output.split('\n')[-1])
+        print("{0}".format(formula.total_size))
+    except subprocess.CalledProcessError as _:
+        print("ERROR")
 
 
 def parse_args(args):
     global FORMULAS
-    if len(sys.argv) < 4:
+    if len(sys.argv) != 3:
         help_err()
         sys.exit()
-
-    try:
-        opts, _ = getopt.getopt(sys.argv[4:], "f:", ["formulas="])
-    except getopt.GetoptError as _:
-        help_err()
-        sys.exit()
-
-    for o, a in opts:
-        if o in ("-f", "--formulas"):
-            FORMULAS = int(a)
-
-    return args[1:4]
+    return args[1:]
 
 
 def get_files(formulafolder):
@@ -254,8 +235,6 @@ def get_files(formulafolder):
 
 
 def process_file(filename, monabin):
-    print(filename, end="")
-    sys.stdout.flush()
     return subprocess.check_output([monabin, "-a", filename]).decode("utf-8")
 
 
