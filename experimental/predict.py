@@ -12,10 +12,13 @@ import subprocess
 import os
 import graphviz
 import math
+import socket
 
 FORMULAS = 400
 MAX_LABEL = 2000
 CREATE_FILES = True
+
+SOCKET_NR = 50889
 
 PRED_CALL = "PredCall"
 SKIP_OP = ["Negate", "Restrict", PRED_CALL]
@@ -206,23 +209,35 @@ class Formula:
 
 
 def main():
-    global FORMULAS
-    monabin, monafile = parse_args(sys.argv)
-    
-    try:
-        mona_output = process_file(monafile, monabin)      
-        formula = Formula(mona_output.split('\n')[-1])
-        print("{0}".format(formula.total_size))
-    except subprocess.CalledProcessError as _:
-        print("ERROR")
+    global SOCKET_NR
+
+    monabin = parse_args(sys.argv)
+
+    socket_in = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    socket_in.bind(('localhost', SOCKET_NR))
+    socket_in.listen()
+    while True:
+        conn, _ = socket_in.accept()
+        monafile = conn.recv(2048).decode()
+
+        if monafile == "stop":
+            break
+
+        try:
+            mona_output = process_file(monafile, monabin)      
+            formula = Formula(mona_output.split('\n')[-1])
+            data = str(formula.total_size).encode()
+            conn.sendall(data)
+            # print("{0}".format(formula.total_size))
+        except subprocess.CalledProcessError as _:
+            conn.sendall("ERROR".encode())
 
 
 def parse_args(args):
-    global FORMULAS
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 2:
         help_err()
         sys.exit()
-    return args[1:]
+    return args[1]
 
 
 def get_files(formulafolder):
@@ -276,7 +291,7 @@ def print_config():
 
 def help_err():
     sys.stderr.write("Bad input arguments. \nFormat: ./predict.py " +
-                     "[mona-bin] [formula folder] [output folder]\n")
+                     "[mona-bin]\n")
 
 
 if __name__ == "__main__":
