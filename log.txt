@@ -1,0 +1,3312 @@
+
+Main formula:
+And(Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))),IdLeft(IdLeft(IdLeft(IdLeft(IdLeft(IdLeft(IdLeft(IdLeft(IdLeft(IdLeft(True(),Export(formula0.gta,Negate(Project(#1099[...],Negate(Impl(And(And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])),Negate(Project(#1106[...],And(And(And(And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099]),And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099])[#1099->#1106]),And(And(Less1(#1113,#1114),Restrict(FirstOrder(#710))[#710->#1114]),Restrict(FirstOrder(#710))[#710->#1113])[#1113->#1099,#1114->#1106]),And(And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099]))[#1099->#1106]))))))))),Export(formula1.gta,Negate(Project(#1115[...],And(Project(#1122[...],And(Project(#1129[...],And(Project(#1136[...],And(And(And(And(And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115])[#1115->#1122]),And(And(Less1(#1113,#1114),Restrict(FirstOrder(#710))[#710->#1114]),Restrict(FirstOrder(#710))[#710->#1113])[#1113->#1115,#1114->#1122]),And(And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115])[#1115->#1122]),And(And(Less1(#1113,#1114),Restrict(FirstOrder(#710))[#710->#1114]),Restrict(FirstOrder(#710))[#710->#1113])[#1113->#1115,#1114->#1122])[#1115->#1122,#1122->#1129]),And(And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115])[#1115->#1122]),And(And(Less1(#1113,#1114),Restrict(FirstOrder(#710))[#710->#1114]),Restrict(FirstOrder(#710))[#710->#1113])[#1113->#1115,#1114->#1122])[#1115->#1129,#1122->#1136]),And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1115])[#1115->#1136])),And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1115])[#1115->#1129])),And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1115])[#1115->#1122])),And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1115])))))),Export(formula2.gta,Impl(Project(#1149[...],And(Project(#1156[...],And(Project(#1163[...],And(And(And(And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163])[#1163->#1173],And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156])[#1156->#1172])[#1172->#1156,#1173->#1163],And(And(Less1(#1113,#1114),Restrict(FirstOrder(#710))[#710->#1114]),Restrict(FirstOrder(#710))[#710->#1113])[#1113->#1156,#1114->#1163]),And(And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163])[#1163->#1171],And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099])[#1099->#1170])[#1170->#1149,#1171->#1163],And(And(Less1(#1113,#1114),Restrict(FirstOrder(#710))[#710->#1114]),Restrict(FirstOrder(#710))[#710->#1113])[#1113->#1149,#1114->#1163])),And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1163]))),And(And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1156]))),And(And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099]))[#1099->#1149])),Negate(Project(#1174[...],Negate(Impl(And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1163])[#1163->#1174],Impl(Project(#1181[...],And(And(And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163]),And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099])[#1099->#1170])[#1163->#1174,#1170->#1181],And(And(Less1(#1102,#1101)[#1101->#1106,#1102->#1113],Restrict(FirstOrder(#710))[#710->#1106]),Restrict(FirstOrder(#710))[#710->#1113])[#1106->#1174,#1113->#1181]),And(And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099]))[#1099->#1181])),Project(#1190[...],And(And(And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163]),And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156])[#1156->#1172])[#1163->#1174,#1172->#1190],And(And(Less1(#1102,#1101)[#1101->#1106,#1102->#1113],Restrict(FirstOrder(#710))[#710->#1106]),Restrict(FirstOrder(#710))[#710->#1113])[#1106->#1174,#1113->#1190]),And(And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1156])[#1156->#1190])))))))))),Export(formula3.gta,Negate(Project(#1199[...],And(Negate(Project(#1206[...],Negate(Impl(And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1163])[#1163->#1206],Impl(And(And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163])[#1163->#1171],And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099])[#1099->#1170])[#1170->#1199,#1171->#1206],And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099])[#710->#1213,#1099->#1214],Restrict(FirstOrder(#710))[#710->#1213])[#1213->#1199,#1214->#1206]),And(And(InStateSpace(#1163,[126]),Restrict(FirstOrder(#710))[#710->#1163])[#1163->#1206],And(In(#1101,#709)[#709->#711,#1101->#1215],Restrict(FirstOrder(#710))[#710->#1215])[#1215->#1206])))))),And(And(InStateSpace(#1099,[195]),Restrict(FirstOrder(#710))[#710->#1099]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099]))[#1099->#1199]))))),Export(formula4.gta,Negate(Project(#1216[...],Negate(Impl(And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1115])[#1115->#1216],Negate(Project(#1223[...],And(And(And(And(InStateSpace(#1223,[121]),Restrict(FirstOrder(#710))[#710->#1223]),And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115])[#1115->#1216]),And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099])[#710->#1213,#1099->#1214],Restrict(FirstOrder(#710))[#710->#1213])[#1213->#1216,#1214->#1223]),And(And(InStateSpace(#1223,[121]),Restrict(FirstOrder(#710))[#710->#1223]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1223])))))))))),Export(formula5.gta,Negate(Project(#1232[...],Negate(Impl(And(And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1156])[#1156->#1232],Negate(Project(#1239[...],And(And(And(And(InStateSpace(#1239,[342]),Restrict(FirstOrder(#710))[#710->#1239]),And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156])[#1156->#1232]),And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099])[#710->#1213,#1099->#1214],Restrict(FirstOrder(#710))[#710->#1213])[#1213->#1232,#1214->#1239]),And(And(InStateSpace(#1239,[342]),Restrict(FirstOrder(#710))[#710->#1239]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1239])))))))))),Export(formula6.gta,Negate(Project(#1248[...],Negate(Impl(And(And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1115])[#1115->#1248],Project(#1255[...],And(And(And(And(InStateSpace(#1255,[514]),Restrict(FirstOrder(#710))[#710->#1255]),And(InStateSpace(#1115,[505]),Restrict(FirstOrder(#710))[#710->#1115])[#1115->#1248]),And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099])[#710->#1213,#1099->#1214],Restrict(FirstOrder(#710))[#710->#1213])[#1213->#1248,#1214->#1255]),And(And(InStateSpace(#1255,[514]),Restrict(FirstOrder(#710))[#710->#1255]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1255]))))))))),Export(formula7.gta,Negate(Project(#1264[...],Negate(Impl(And(And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1156])[#1156->#1264],Negate(Project(#1271[...],And(And(And(And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156])[#1156->#1264],And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156])[#1156->#1271]),And(And(Less1(#1113,#1114),Restrict(FirstOrder(#710))[#710->#1114]),Restrict(FirstOrder(#710))[#710->#1113])[#1113->#1264,#1114->#1271]),And(And(InStateSpace(#1156,[321]),Restrict(FirstOrder(#710))[#710->#1156]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1156])[#1156->#1271]))))))))),Export(formula8.gta,Negate(Project(#1280[...],Negate(Impl(And(And(InStateSpace(#1255,[514]),Restrict(FirstOrder(#710))[#710->#1255]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1255])[#1255->#1280],Or(Project(#1300[...],And(And(And(Project(#1308[...],And(Project(#1307[...],And(And(Dot0(#1307,#1300),Restrict(FirstOrder(#710))[#710->#1300]),Dot1(#1294,#1287)[#1287->#1307,#1294->#1308])),And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710])[#710->#1308])),And(InStateSpace(#1287,[495]),Restrict(FirstOrder(#710))[#710->#1287])[#1287->#1300]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1300]),And(And(And(InStateSpace(#1287,[495]),Restrict(FirstOrder(#710))[#710->#1287]),And(InStateSpace(#1255,[514]),Restrict(FirstOrder(#710))[#710->#1255])[#1255->#1280]),And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099])[#710->#1213,#1099->#1214],Restrict(FirstOrder(#710))[#710->#1213])[#1213->#1280,#1214->#1287])[#1287->#1300])),Project(#1287[...],And(And(And(And(InStateSpace(#1287,[495]),Restrict(FirstOrder(#710))[#710->#1287]),And(InStateSpace(#1255,[514]),Restrict(FirstOrder(#710))[#710->#1255])[#1255->#1280]),And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099])[#710->#1213,#1099->#1214],Restrict(FirstOrder(#710))[#710->#1213])[#1213->#1280,#1214->#1287]),And(And(And(InStateSpace(#1287,[495]),Restrict(FirstOrder(#710))[#710->#1287]),Project(#1294[...],And(And(Dot1(#1294,#1287),Restrict(FirstOrder(#710))[#710->#1287]),And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710])[#710->#1294]))),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1287])))))))))),Export(formula9.gta,Negate(Project(#1314[...],Negate(Impl(And(And(InStateSpace(#1314,[380]),Restrict(FirstOrder(#710))[#710->#1314]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1314]),Or(Project(#1334[...],And(And(And(And(InStateSpace(#1321,[110]),Restrict(FirstOrder(#710))[#710->#1321])[#1321->#1334],Project(#1308[...],And(Project(#1307[...],And(And(Dot0(#1307,#1300),Restrict(FirstOrder(#710))[#710->#1300]),Dot1(#1294,#1287)[#1287->#1307,#1294->#1308])),And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710])[#710->#1308]))[#1300->#1334]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1334]),And(And(And(InStateSpace(#1321,[110]),Restrict(FirstOrder(#710))[#710->#1321]),And(InStateSpace(#1314,[380]),Restrict(FirstOrder(#710))[#710->#1314])),And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099])[#710->#1213,#1099->#1214],Restrict(FirstOrder(#710))[#710->#1213])[#1213->#1314,#1214->#1321])[#1321->#1334])),Project(#1321[...],And(And(And(And(InStateSpace(#1321,[110]),Restrict(FirstOrder(#710))[#710->#1321]),And(InStateSpace(#1314,[380]),Restrict(FirstOrder(#710))[#710->#1314])),And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099])[#710->#1213,#1099->#1214],Restrict(FirstOrder(#710))[#710->#1213])[#1213->#1314,#1214->#1321]),And(And(And(InStateSpace(#1321,[110]),Restrict(FirstOrder(#710))[#710->#1321]),Project(#1294[...],And(And(Dot1(#1294,#1287),Restrict(FirstOrder(#710))[#710->#1287]),And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710])[#710->#1294]))[#1287->#1321]),And(And(And(LessEq1(#710,#1099),Restrict(FirstOrder(#710))[#710->#1099]),Restrict(And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710))))),And(And(Restrict(Project(#1101[...],And(And(And(Negate(Project(#1102[...],And(And(And(And(In(#1101,#709)[#1101->#1102],Restrict(WellFormedTree(#709))),Less1(#1102,#1101)),Restrict(FirstOrder(#710))[#710->#1101]),Restrict(FirstOrder(#710))[#710->#1102]))),In(#1101,#709)),Restrict(WellFormedTree(#709))),And(Root(#1100,uT),FirstOrder(#710)[#710->#1100])[#1100->#1101]))),In(#1101,#709)[#1101->#710]),Restrict(FirstOrder(#710)))[#710->#1099])[#1099->#1321])))))))))))
+AUTOMATON CONSTRUCTION
+FirstOrder(#710)
+Automaton (1678,2794,2)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 2 
+Don't-care states: 
+Copying (1678,2794,2) -> (1678,2794,3)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 2 
+Don't-care states: 
+Replacing indices (1678,2794,3)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 2 
+Don't-care states: 
+Restrict
+Automaton (1678,2794,3)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 
+Don't-care states: 0 2 
+  Minimizing (1678,2794,3) -> (1676,2792,4)
+Automaton (1676,2792,4)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Copying (1676,2792,4) -> (1676,2792,5)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+In(#1101,#709)
+Automaton (1678,3352,7)
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+Copying (1678,3352,7) -> (1678,3352,8)
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+Replacing indices (1678,3352,8)
+[#1101->#1102]
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+WellFormedTree(#709)
+Automaton (2136,3628,10)
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+Replacing indices (2136,3628,10)
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+Restrict
+Automaton (2136,3628,10)
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 
+Don't-care states: 0 1 
+  Minimizing (2136,3628,10) -> (2132,3621,11)
+Automaton (2132,3621,11)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Copying (2132,3621,11) -> (2132,3621,12)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (2132,3621,12)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+  (1678,3352,8)x(2132,3621,12) -> (5838,12996,13)
+  Minimizing (5838,12996,13) -> (4260,8833,14)
+Automaton (4260,8833,14)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Less1(#1102,#1101)
+Automaton (1677,4467,16)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1677,4467,16) -> (1677,4467,17)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+  (4260,8833,14)x(1677,4467,17) -> (12700,45103,18)
+  Minimizing (12700,45103,18) -> (6311,21444,19)
+Automaton (6311,21444,19)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1676,2792,4) -> (1676,2792,20)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,20)
+[#710->#1101]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+  (6311,21444,19)x(1676,2792,20) -> (11510,36649,21)
+  Minimizing (11510,36649,21) -> (6942,22956,22)
+Automaton (6942,22956,22)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1676,2792,4) -> (1676,2792,23)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,23)
+[#710->#1102]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+  (6942,22956,22)x(1676,2792,23) -> (12116,41246,24)
+  Minimizing (12116,41246,24) -> (7858,29752,25)
+Automaton (7858,29752,25)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1102 '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+  (7858,29752,25) -> (4718,11978,27)
+  Minimizing (4718,11978,27) -> (4312,11572,28)
+Automaton (4312,11572,28)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+Automaton (4312,11572,28)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Copying (1678,3352,7) -> (1678,3352,29)
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+  (4312,11572,28)x(1678,3352,29) -> (6906,18851,30)
+  Minimizing (6906,18851,30) -> (4312,11574,31)
+Automaton (4312,11574,31)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+  (4312,11574,31)x(2132,3621,11) -> (5884,14635,32)
+  Minimizing (5884,14635,32) -> (4312,11574,33)
+Automaton (4312,11574,33)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4312,11574,33)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Root(#1100,uT)
+Automaton (1122,1678,35)
+Resulting GTA:
+Accepting states: 0 1 
+Rejecting states: 2 
+Don't-care states: 
+Replacing indices (1678,2794,2)
+[#710->#1100]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 2 
+Don't-care states: 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 19
+  tree [uT] T where root(uT)=tree_root(T);
+                    ^
+  (1122,1678,35)x(1678,2794,2) -> (1682,2796,36)
+  Minimizing (1682,2796,36) -> (1119,1677,37)
+Automaton (1119,1677,37)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 
+Replacing indices (1119,1677,37)
+[#1100->#1101]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 19
+  tree [uT] T where root(uT)=tree_root(T);
+                    ^
+  (4312,11574,33)x(1119,1677,37) -> (4875,12695,38)
+  Minimizing (4875,12695,38) -> (3704,9826,39)
+Automaton (3704,9826,39)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3704,9826,39)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1101 '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 27
+  tree [uT] T where root(uT)=tree_root(T);
+                            ^
+  (3704,9826,39) -> (2134,3624,41)
+  Minimizing (2134,3624,41) -> (2134,3624,42)
+Automaton (2134,3624,42)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (2134,3624,42)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Restrict
+Automaton (2134,3624,42)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 
+Don't-care states: 0 2 
+  Minimizing (2134,3624,42) -> (1674,2712,43)
+Automaton (1674,2712,43)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Copying (1678,3352,7) -> (1678,3352,44)
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+Replacing indices (1678,3352,44)
+[#1101->#710]
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 650 column 28
+  tree [uT] T where root(uT)=tree_root(T);
+                             ^
+  (1674,2712,43)x(1678,3352,44) -> (4464,9809,45)
+  Minimizing (4464,9809,45) -> (3344,7015,46)
+Automaton (3344,7015,46)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3344,7015,46) -> (3344,7015,47)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product &
+  (3344,7015,47)x(1676,2792,5) -> (6057,13944,48)
+  Minimizing (6057,13944,48) -> (3344,8610,49)
+Automaton (3344,8610,49)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3344,8610,49) -> (3344,8610,50)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3344,8610,50)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Restrict
+Automaton (3344,8610,50)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 
+Don't-care states: 0 2 
+  Minimizing (3344,8610,50) -> (2230,5345,51)
+Automaton (2230,5345,51)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+True()
+Automaton (560,560,53)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 
+InStateSpace(#1099,[195])
+Automaton (1119,1676,55)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,56)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,56)
+[#710->#1099]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 59
+  execute export ("formula0.gta", (all1 a: $$<=a & a in T & type(a,yak_anchor)
+                                                            ^
+  (1119,1676,55)x(1676,2792,56) -> (2274,3985,57)
+  Minimizing (2274,3985,57) -> (1975,3389,58)
+Automaton (1975,3389,58)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,58) -> (1975,3389,59)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,59)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,58) -> (1975,3389,60)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,60)
+[#1099->#1106]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 173
+   var_1, var_2: type(var_1,yak_anchor) & type(var_2,yak_anchor) & var_1 = a &
+                                         ^
+  (1975,3389,59)x(1975,3389,60) -> (7111,17380,61)
+  Minimizing (7111,17380,61) -> (3681,9923,62)
+Automaton (3681,9923,62)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3681,9923,62)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Less1(#1113,#1114)
+Automaton (1677,4467,64)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,65)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,65)
+[#710->#1114]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 230
+  chor) & var_1 = a & var_2 = b & (var_1 < var_2)))))));
+                                         ^
+  (1677,4467,64)x(1676,2792,65) -> (4467,12279,66)
+  Minimizing (4467,12279,66) -> (3349,7810,67)
+Automaton (3349,7810,67)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1676,2792,4) -> (1676,2792,68)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,68)
+[#710->#1113]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product &
+  (3349,7810,67)x(1676,2792,68) -> (5581,13391,69)
+  Minimizing (5581,13391,69) -> (3349,8927,70)
+Automaton (3349,8927,70)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,8927,70) -> (3349,8927,71)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,8927,71)
+[#1113->#1099]
+[#1114->#1106]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 222
+  2,yak_anchor) & var_1 = a & var_2 = b & (var_1 < var_2)))))));
+                                         ^
+  (3681,9923,62)x(3349,8927,71) -> (4539,12493,72)
+  Minimizing (4539,12493,72) -> (3178,8414,73)
+Automaton (3178,8414,73)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3178,8414,73)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,58) -> (1975,3389,74)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3344,8610,49) -> (3344,8610,75)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3344,8610,75)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Restrict
+Automaton (3344,8610,75)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 
+Don't-care states: 0 2 
+  Minimizing (3344,8610,75) -> (2230,5345,76)
+Automaton (2230,5345,76)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+LessEq1(#710,#1099)
+Automaton (1677,5025,78)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,79)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,79)
+[#710->#1099]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 44
+  execute export ("formula0.gta", (all1 a: $$<=a & a in T & type(a,yak_anchor)
+                                             ^
+  (1677,5025,78)x(1676,2792,79) -> (4467,13953,80)
+  Minimizing (4467,13953,80) -> (3349,8369,81)
+Automaton (3349,8369,81)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,8369,81) -> (3349,8369,82)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product &
+  (3349,8369,82)x(2230,5345,76) -> (8840,28471,83)
+  Minimizing (8840,28471,83) -> (4381,15877,84)
+Automaton (4381,15877,84)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3344,8610,49)
+[#710->#1099]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 49
+  execute export ("formula0.gta", (all1 a: $$<=a & a in T & type(a,yak_anchor)
+                                                  ^
+  (4381,15877,84)x(3344,8610,49) -> (8762,29816,85)
+  Minimizing (8762,29816,85) -> (5012,17953,86)
+Automaton (5012,17953,86)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,87)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 58
+  execute export ("formula0.gta", (all1 a: $$<=a & a in T & type(a,yak_anchor)
+                                                           ^
+  (1975,3389,74)x(5012,17953,87) -> (7915,26732,88)
+  Minimizing (7915,26732,88) -> (4494,15850,89)
+Automaton (4494,15850,89)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4494,15850,89) -> (4494,15850,90)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4494,15850,90)
+[#1099->#1106]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 129
+  : $$<=b & b in T & type(b,yak_anchor) & (ex1 var_1, var_2: type(var_1,yak_an
+                                         ^
+  (3178,8414,73)x(4494,15850,90) -> (16731,70916,91)
+  Minimizing (16731,70916,91) -> (8008,36914,92)
+Automaton (8008,36914,92)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1106 '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 85
+  a & a in T & type(a,yak_anchor) => ((~(ex1 b: $$<=b & b in T & type(b,yak_an
+                                         ^
+  (8008,36914,92) -> (4670,16557,94)
+  Minimizing (4670,16557,94) -> (4670,16557,95)
+Automaton (4670,16557,95)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 83
+  <=a & a in T & type(a,yak_anchor) => ((~(ex1 b: $$<=b & b in T & type(b,yak_
+                                         ^
+Automaton (4670,16557,95)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Copying (4494,15850,89) -> (4494,15850,96)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 79
+  : $$<=a & a in T & type(a,yak_anchor) => ((~(ex1 b: $$<=b & b in T & type(b,
+                                         ^
+  (4494,15850,96)x(4670,16557,95) -> (5565,20134,97)
+  Minimizing (5565,20134,97) -> (4581,16201,98)
+Automaton (4581,16201,98)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 34
+  execute export ("formula0.gta", (all1 a: $$<=a & a in T & type(a,yak_anchor)
+                                   ^
+Automaton (4581,16201,98)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Right-quotient
+Projecting #1099 '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 34
+  execute export ("formula0.gta", (all1 a: $$<=a & a in T & type(a,yak_anchor)
+                                   ^
+  (4581,16201,98) -> (2913,7394,100)
+  Minimizing (2913,7394,100) -> (2913,7394,101)
+Automaton (2913,7394,101)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 34
+  execute export ("formula0.gta", (all1 a: $$<=a & a in T & type(a,yak_anchor)
+                                   ^
+Automaton (2913,7394,101)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+-- Exporting 'formula0.gta' --
+Replacing indices (2913,7394,102)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+InStateSpace(#1115,[505])
+Automaton (1119,1676,104)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,105)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,105)
+[#710->#1115]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 61
+  execute export ("formula1.gta", (~((ex1 a: $$<=a & a in T & type(a,yak_list)
+                                                              ^
+  (1119,1676,104)x(1676,2792,105) -> (1946,3329,106)
+  Minimizing (1946,3329,106) -> (1811,3061,107)
+Automaton (1811,3061,107)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,107) -> (1811,3061,108)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,108)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,107) -> (1811,3061,109)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,109)
+[#1115->#1122]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 259
+  x1 var_3, var_4: type(var_3,yak_list) & type(var_4,yak_list) & var_3 = a & v
+                                         ^
+  (1811,3061,108)x(1811,3061,109) -> (5963,14264,110)
+  Minimizing (5963,14264,110) -> (3189,8447,111)
+Automaton (3189,8447,111)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3189,8447,111)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,8927,70) -> (3349,8927,112)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,8927,112)
+[#1113->#1115]
+[#1114->#1122]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 306
+  r_4,yak_list) & var_3 = a & var_4 = b & (var_3 < var_4)) & (ex1 var_5, var_6
+                                         ^
+  (3189,8447,111)x(3349,8927,112) -> (3883,10525,113)
+  Minimizing (3883,10525,113) -> (3032,7976,114)
+Automaton (3032,7976,114)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3032,7976,114) -> (3032,7976,115)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3032,7976,115)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3032,7976,114) -> (3032,7976,116)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3032,7976,116)
+[#1115->#1122]
+[#1122->#1129]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 325
+  _3 = a & var_4 = b & (var_3 < var_4)) & (ex1 var_5, var_6: type(var_5,yak_li
+                                         ^
+  (3032,7976,115)x(3032,7976,116) -> (11061,37623,117)
+  Minimizing (11061,37623,117) -> (5367,19793,118)
+Automaton (5367,19793,118)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3032,7976,114)
+[#1115->#1129]
+[#1122->#1136]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 434
+  5 = b & var_6 = c & (var_5 < var_6))) & (ex1 var_7, var_8: type(var_7,yak_li
+                                         ^
+  (5367,19793,118)x(3032,7976,114) -> (18653,81297,119)
+  Minimizing (18653,81297,119) -> (9930,47428,120)
+Automaton (9930,47428,120)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,107) -> (1811,3061,121)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,122)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,122)
+[#1099->#1115]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 60
+  execute export ("formula1.gta", (~((ex1 a: $$<=a & a in T & type(a,yak_list)
+                                                             ^
+  (1811,3061,121)x(5012,17953,122) -> (6931,23124,123)
+  Minimizing (6931,23124,123) -> (4166,14538,124)
+Automaton (4166,14538,124)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4166,14538,124) -> (4166,14538,125)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4166,14538,125)
+[#1115->#1136]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 214
+   d: $$<=d & d in T & type(d,yak_list) & ((((ex1 var_3, var_4: type(var_3,yak
+                                         ^
+  (9930,47428,120)x(4166,14538,125) -> (44415,274105,126)
+  Minimizing (44415,274105,126) -> (28160,190242,127)
+Automaton (28160,190242,127)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1136 '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 172
+   $$<=c & c in T & type(c,yak_list) & ((ex1 d: $$<=d & d in T & type(d,yak_li
+                                         ^
+  (28160,190242,127) -> (14814,84325,129)
+  Minimizing (14814,84325,129) -> (14814,84325,130)
+Automaton (14814,84325,130)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4166,14538,124) -> (4166,14538,131)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4166,14538,131)
+[#1115->#1129]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 169
+   c: $$<=c & c in T & type(c,yak_list) & ((ex1 d: $$<=d & d in T & type(d,yak
+                                         ^
+  (14814,84325,130)x(4166,14538,131) -> (19835,106813,132)
+  Minimizing (19835,106813,132) -> (14707,83683,133)
+Automaton (14707,83683,133)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1129 '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 127
+   $$<=b & b in T & type(b,yak_list) & ((ex1 c: $$<=c & c in T & type(c,yak_li
+                                         ^
+  (14707,83683,133) -> (8035,37053,135)
+  Minimizing (8035,37053,135) -> (8035,37053,136)
+Automaton (8035,37053,136)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4166,14538,124) -> (4166,14538,137)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4166,14538,137)
+[#1115->#1122]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 124
+   b: $$<=b & b in T & type(b,yak_list) & ((ex1 c: $$<=c & c in T & type(c,yak
+                                         ^
+  (8035,37053,136)x(4166,14538,137) -> (12417,54916,138)
+  Minimizing (12417,54916,138) -> (7928,36518,139)
+Automaton (7928,36518,139)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1122 '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 82
+   $$<=a & a in T & type(a,yak_list) & ((ex1 b: $$<=b & b in T & type(b,yak_li
+                                         ^
+  (7928,36518,139) -> (4592,16245,141)
+  Minimizing (4592,16245,141) -> (4592,16245,142)
+Automaton (4592,16245,142)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4166,14538,124) -> (4166,14538,143)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 79
+   a: $$<=a & a in T & type(a,yak_list) & ((ex1 b: $$<=b & b in T & type(b,yak
+                                         ^
+  (4592,16245,142)x(4166,14538,143) -> (4995,17855,144)
+  Minimizing (4995,17855,144) -> (4485,15817,145)
+Automaton (4485,15817,145)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1115 '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 37
+  execute export ("formula1.gta", (~((ex1 a: $$<=a & a in T & type(a,yak_list)
+                                      ^
+  (4485,15817,145) -> (2817,7106,147)
+  Minimizing (2817,7106,147) -> (2815,7104,148)
+Automaton (2815,7104,148)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1373 column 34
+  execute export ("formula1.gta", (~((ex1 a: $$<=a & a in T & type(a,yak_list)
+                                   ^
+Automaton (2815,7104,148)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+-- Exporting 'formula1.gta' --
+Replacing indices (2815,7104,149)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+InStateSpace(#1163,[126])
+Automaton (1119,1676,151)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,152)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,152)
+[#710->#1163]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 152
+  ,yak_bold) & ((ex1 w: $$<=w & w in T & type(w,yak_texts) & (((ex1 var_9, var
+                                         ^
+  (1119,1676,151)x(1676,2792,152) -> (2274,3985,153)
+  Minimizing (2274,3985,153) -> (1975,3389,154)
+Automaton (1975,3389,154)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,154) -> (1975,3389,155)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,155)
+[#1163->#1173]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+InStateSpace(#1156,[321])
+Automaton (1119,1676,157)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,158)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,158)
+[#710->#1156]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 107
+  ak_anchor) & ((ex1 b: $$<=b & b in T & type(b,yak_bold) & ((ex1 w: $$<=w & w
+                                         ^
+  (1119,1676,157)x(1676,2792,158) -> (2274,3985,159)
+  Minimizing (2274,3985,159) -> (1975,3389,160)
+Automaton (1975,3389,160)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,160) -> (1975,3389,161)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,161)
+[#1156->#1172]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 333
+  var_11, var_12: type(var_11,yak_bold) & type(var_12,yak_texts) & var_11 = b 
+                                         ^
+  (1975,3389,155)x(1975,3389,161) -> (7111,17445,162)
+  Minimizing (7111,17445,162) -> (3681,9923,163)
+Automaton (3681,9923,163)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3681,9923,163)
+[#1172->#1156]
+[#1173->#1163]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,8927,70) -> (3349,8927,164)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,8927,164)
+[#1113->#1156]
+[#1114->#1163]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 384
+  ,yak_texts) & var_11 = b & var_12 = w & (var_11 < var_12)))))))))) => ((all1
+                                         ^
+  (3681,9923,163)x(3349,8927,164) -> (4539,12493,165)
+  Minimizing (4539,12493,165) -> (3178,8414,166)
+Automaton (3178,8414,166)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3178,8414,166)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,154) -> (1975,3389,167)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,167)
+[#1163->#1171]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,58) -> (1975,3389,168)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,168)
+[#1099->#1170]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 218
+  var_9, var_10: type(var_9,yak_anchor) & type(var_10,yak_texts) & var_9 = a &
+                                         ^
+  (1975,3389,167)x(1975,3389,168) -> (7111,17386,169)
+  Minimizing (7111,17386,169) -> (3681,9923,170)
+Automaton (3681,9923,170)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3681,9923,170) -> (3681,9923,171)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3681,9923,171)
+[#1170->#1149]
+[#1171->#1163]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,8927,70) -> (3349,8927,172)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,8927,172)
+[#1113->#1149]
+[#1114->#1163]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 268
+  0,yak_texts) & var_9 = a & var_10 = w & (var_9 < var_10)) & (ex1 var_11, var
+                                         ^
+  (3681,9923,171)x(3349,8927,172) -> (4539,12493,173)
+  Minimizing (4539,12493,173) -> (3178,8414,174)
+Automaton (3178,8414,174)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3178,8414,174)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 288
+   = a & var_10 = w & (var_9 < var_10)) & (ex1 var_11, var_12: type(var_11,yak
+                                         ^
+  (3178,8414,166)x(3178,8414,174) -> (12012,41134,175)
+  Minimizing (12012,41134,175) -> (5584,20661,176)
+Automaton (5584,20661,176)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,154) -> (1975,3389,177)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,178)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,178)
+[#1099->#1163]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 151
+  b,yak_bold) & ((ex1 w: $$<=w & w in T & type(w,yak_texts) & (((ex1 var_9, va
+                                         ^
+  (1975,3389,177)x(5012,17953,178) -> (7915,26732,179)
+  Minimizing (7915,26732,179) -> (4494,15850,180)
+Automaton (4494,15850,180)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4494,15850,180) -> (4494,15850,181)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 171
+  w: $$<=w & w in T & type(w,yak_texts) & (((ex1 var_9, var_10: type(var_9,yak
+                                         ^
+  (5584,20661,176)x(4494,15850,181) -> (27887,144436,182)
+  Minimizing (27887,144436,182) -> (15036,85652,183)
+Automaton (15036,85652,183)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1163 '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 128
+   $$<=b & b in T & type(b,yak_bold) & ((ex1 w: $$<=w & w in T & type(w,yak_te
+                                         ^
+  (15036,85652,183) -> (8285,38297,185)
+  Minimizing (8285,38297,185) -> (8283,38291,186)
+Automaton (8283,38291,186)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,160) -> (1975,3389,187)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,188)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,188)
+[#1099->#1156]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 106
+  yak_anchor) & ((ex1 b: $$<=b & b in T & type(b,yak_bold) & ((ex1 w: $$<=w & 
+                                         ^
+  (1975,3389,187)x(5012,17953,188) -> (7915,26732,189)
+  Minimizing (7915,26732,189) -> (4494,15850,190)
+Automaton (4494,15850,190)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4494,15850,190) -> (4494,15850,191)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 125
+   b: $$<=b & b in T & type(b,yak_bold) & ((ex1 w: $$<=w & w in T & type(w,yak
+                                         ^
+  (8283,38291,186)x(4494,15850,191) -> (13617,60586,192)
+  Minimizing (13617,60586,192) -> (8097,37361,193)
+Automaton (8097,37361,193)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1156 '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 83
+  $<=a & a in T & type(a,yak_anchor) & ((ex1 b: $$<=b & b in T & type(b,yak_bo
+                                         ^
+  (8097,37361,193) -> (4757,16901,195)
+  Minimizing (4757,16901,195) -> (4757,16901,196)
+Automaton (4757,16901,196)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4494,15850,89) -> (4494,15850,197)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4494,15850,197)
+[#1099->#1149]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 80
+  : $$<=a & a in T & type(a,yak_anchor) & ((ex1 b: $$<=b & b in T & type(b,yak
+                                         ^
+  (4757,16901,196)x(4494,15850,197) -> (5561,20115,198)
+  Minimizing (5561,20115,198) -> (4668,16546,199)
+Automaton (4668,16546,199)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1149 '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 36
+  execute export ("formula2.gta", (((ex1 a: $$<=a & a in T & type(a,yak_anchor
+                                     ^
+  (4668,16546,199) -> (3162,8141,201)
+  Minimizing (3162,8141,201) -> (3075,7880,202)
+Automaton (3075,7880,202)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,58)
+[#1099->#1170]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,154) -> (1975,3389,203)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,203)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 218
+  var_9, var_10: type(var_9,yak_anchor) & type(var_10,yak_texts) & var_9 = a &
+                                         ^
+  (1975,3389,203)x(1975,3389,58) -> (7111,17538,204)
+  Minimizing (7111,17538,204) -> (3681,9923,205)
+Automaton (3681,9923,205)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3681,9923,205)
+[#1163->#1174]
+[#1170->#1181]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1677,4467,16)
+[#1101->#1106]
+[#1102->#1113]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,206)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,206)
+[#710->#1106]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1371 column 230
+  chor) & var_1 = a & var_2 = b & (var_1 < var_2)))))));
+                                         ^
+  (1677,4467,16)x(1676,2792,206) -> (4467,12278,207)
+  Minimizing (4467,12278,207) -> (3349,8368,208)
+Automaton (3349,8368,208)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1676,2792,4) -> (1676,2792,209)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,209)
+[#710->#1113]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product &
+  (3349,8368,208)x(1676,2792,209) -> (5581,13949,210)
+  Minimizing (5581,13949,210) -> (3349,9485,211)
+Automaton (3349,9485,211)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,9485,211) -> (3349,9485,212)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,9485,212)
+[#1106->#1174]
+[#1113->#1181]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 609
+  ,yak_texts) & var_13 = a & var_14 = w & (var_13 < var_14)))) => ((ex1 b: $$<
+                                         ^
+  (3681,9923,205)x(3349,9485,212) -> (4539,13051,213)
+  Minimizing (4539,13051,213) -> (3178,8414,214)
+Automaton (3178,8414,214)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3178,8414,214)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4494,15850,89) -> (4494,15850,215)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4494,15850,215)
+[#1099->#1181]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 511
+  : $$<=a & a in T & type(a,yak_anchor) & (ex1 var_13, var_14: type(var_13,yak
+                                         ^
+  (3178,8414,214)x(4494,15850,215) -> (16731,70918,216)
+  Minimizing (16731,70918,216) -> (8008,36914,217)
+Automaton (8008,36914,217)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1181 '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 467
+  =w & w in T & type(w,yak_texts) => ((((ex1 a: $$<=a & a in T & type(a,yak_an
+                                         ^
+  (8008,36914,217) -> (4670,16553,219)
+  Minimizing (4670,16553,219) -> (4670,16553,220)
+Automaton (4670,16553,220)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,154) -> (1975,3389,221)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,221)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,160) -> (1975,3389,222)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,222)
+[#1156->#1172]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 333
+  var_11, var_12: type(var_11,yak_bold) & type(var_12,yak_texts) & var_11 = b 
+                                         ^
+  (1975,3389,221)x(1975,3389,222) -> (7111,17465,223)
+  Minimizing (7111,17465,223) -> (3681,9923,224)
+Automaton (3681,9923,224)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3681,9923,224)
+[#1163->#1174]
+[#1172->#1190]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,9485,211)
+[#1106->#1174]
+[#1113->#1190]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 774
+  ,yak_texts) & var_15 = b & var_16 = w & (var_15 < var_16))))))))));
+                                         ^
+  (3681,9923,224)x(3349,9485,211) -> (4539,13051,225)
+  Minimizing (4539,13051,225) -> (3178,8414,226)
+Automaton (3178,8414,226)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3178,8414,226)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4494,15850,190) -> (4494,15850,227)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4494,15850,227)
+[#1156->#1190]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 678
+   b: $$<=b & b in T & type(b,yak_bold) & (ex1 var_15, var_16: type(var_15,yak
+                                         ^
+  (3178,8414,226)x(4494,15850,227) -> (16731,70918,228)
+  Minimizing (16731,70918,228) -> (8008,36914,229)
+Automaton (8008,36914,229)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1190 '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 636
+  var_14 = w & (var_13 < var_14)))) => ((ex1 b: $$<=b & b in T & type(b,yak_bo
+                                         ^
+  (8008,36914,229) -> (4670,16553,231)
+  Minimizing (4670,16553,231) -> (4670,16553,232)
+Automaton (4670,16553,232)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 632
+  a & var_14 = w & (var_13 < var_14)))) => ((ex1 b: $$<=b & b in T & type(b,ya
+                                         ^
+  (4670,16553,220)x(4670,16553,232) -> (5850,21271,233)
+  Minimizing (5850,21271,233) -> (4664,16529,234)
+Automaton (4664,16529,234)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4494,15850,180) -> (4494,15850,235)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4494,15850,235)
+[#1163->#1174]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 461
+  w: $$<=w & w in T & type(w,yak_texts) => ((((ex1 a: $$<=a & a in T & type(a,
+                                         ^
+  (4494,15850,235)x(4664,16529,234) -> (5934,21608,236)
+  Minimizing (5934,21608,236) -> (4572,16161,237)
+Automaton (4572,16161,237)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 417
+   = w & (var_11 < var_12)))))))))) => ((all1 w: $$<=w & w in T & type(w,yak_t
+                                         ^
+Automaton (4572,16161,237)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Right-quotient
+Projecting #1174 '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 417
+   = w & (var_11 < var_12)))))))))) => ((all1 w: $$<=w & w in T & type(w,yak_t
+                                         ^
+  (4572,16161,237) -> (2832,7151,239)
+  Minimizing (2832,7151,239) -> (2819,7112,240)
+Automaton (2819,7112,240)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 417
+   = w & (var_11 < var_12)))))))))) => ((all1 w: $$<=w & w in T & type(w,yak_t
+                                         ^
+Automaton (2819,7112,240)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1375 column 413
+  r_12 = w & (var_11 < var_12)))))))))) => ((all1 w: $$<=w & w in T & type(w,y
+                                         ^
+  (3075,7880,202)x(2819,7112,240) -> (4165,11150,241)
+  Minimizing (4165,11150,241) -> (3519,9212,242)
+Automaton (3519,9212,242)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+-- Exporting 'formula2.gta' --
+Replacing indices (3519,9212,243)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4494,15850,180)
+[#1163->#1206]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3681,9923,170)
+[#1170->#1199]
+[#1171->#1206]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,8369,81)
+[#710->#1213]
+[#1099->#1214]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1676,2792,4) -> (1676,2792,244)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,244)
+[#710->#1213]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product &
+  (3349,8369,81)x(1676,2792,244) -> (5581,13949,245)
+  Minimizing (5581,13949,245) -> (3349,9485,246)
+Automaton (3349,9485,246)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,9485,246) -> (3349,9485,247)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,9485,247)
+[#1213->#1199]
+[#1214->#1206]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 228
+  ,yak_texts) & var_17 = a & var_18 = t & (var_17 <= var_18)) => (ex1 var_19: 
+                                         ^
+  (3681,9923,170)x(3349,9485,247) -> (4539,13051,248)
+  Minimizing (4539,13051,248) -> (3178,8414,249)
+Automaton (3178,8414,249)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3178,8414,249)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,154)
+[#1163->#1206]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1678,3352,7)
+[#709->#711]
+[#1101->#1215]
+Resulting GTA:
+Accepting states: 2 
+Rejecting states: 0 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,250)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,250)
+[#710->#1215]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product &
+  (1678,3352,7)x(1676,2792,250) -> (2796,5586,251)
+  Minimizing (2796,5586,251) -> (2235,5025,252)
+Automaton (2235,5025,252)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (2235,5025,252)
+[#1215->#1206]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 303
+   type(var_19,yak_texts) &  var_19 = t & var_19 in pred_here))))))));
+                                         ^
+  (1975,3389,154)x(2235,5025,252) -> (2833,6219,253)
+  Minimizing (2833,6219,253) -> (1975,3391,254)
+Automaton (1975,3391,254)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3391,254)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 250
+   a & var_18 = t & (var_17 <= var_18)) => (ex1 var_19: type(var_19,yak_texts)
+                                         ^
+  (3178,8414,249)x(1975,3391,254) -> (5488,13933,255)
+  Minimizing (5488,13933,255) -> (3178,8417,256)
+Automaton (3178,8417,256)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 127
+  t: $$<=t & t in T & type(t,yak_texts) => (((ex1 var_17, var_18: type(var_17,
+                                         ^
+  (4494,15850,180)x(3178,8417,256) -> (16909,71821,257)
+  Minimizing (16909,71821,257) -> (8008,36918,258)
+Automaton (8008,36918,258)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 83
+  $<=a & a in T & type(a,yak_anchor) & ((all1 t: $$<=t & t in T & type(t,yak_t
+                                         ^
+Automaton (8008,36918,258)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Right-quotient
+Projecting #1206 '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 83
+  $<=a & a in T & type(a,yak_anchor) & ((all1 t: $$<=t & t in T & type(t,yak_t
+                                         ^
+  (8008,36918,258) -> (4672,16563,260)
+  Minimizing (4672,16563,260) -> (4672,16563,261)
+Automaton (4672,16563,261)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 83
+  $<=a & a in T & type(a,yak_anchor) & ((all1 t: $$<=t & t in T & type(t,yak_t
+                                         ^
+Automaton (4672,16563,261)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Replacing indices (4494,15850,89)
+[#1099->#1199]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 80
+  : $$<=a & a in T & type(a,yak_anchor) & ((all1 t: $$<=t & t in T & type(t,ya
+                                         ^
+  (4672,16563,261)x(4494,15850,89) -> (5567,20141,262)
+  Minimizing (5567,20141,262) -> (4583,16207,263)
+Automaton (4583,16207,263)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1199 '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 36
+  execute export ("formula3.gta", (~(ex1 a: $$<=a & a in T & type(a,yak_anchor
+                                     ^
+  (4583,16207,263) -> (3002,7663,265)
+  Minimizing (3002,7663,265) -> (2913,7395,266)
+Automaton (2913,7395,266)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1377 column 34
+  execute export ("formula3.gta", (~(ex1 a: $$<=a & a in T & type(a,yak_anchor
+                                   ^
+Automaton (2913,7395,266)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+-- Exporting 'formula3.gta' --
+Replacing indices (2913,7395,267)
+[#709->#0]
+[#710->#1]
+[#711->#2]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+InStateSpace(#1223,[121])
+Automaton (1119,1676,269)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,270)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,270)
+[#710->#1223]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 107
+  k_list) => ((~(ex1 h: $$<=h & h in T & type(h,yak_heading) & (ex1 var_20, va
+                                         ^
+  (1119,1676,269)x(1676,2792,270) -> (1948,3333,271)
+  Minimizing (1948,3333,271) -> (1813,3064,272)
+Automaton (1813,3064,272)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1813,3064,272) -> (1813,3064,273)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1813,3064,273)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,107) -> (1811,3061,274)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,274)
+[#1115->#1216]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 173
+  var_20, var_21: type(var_20,yak_list) & type(var_21,yak_heading) & var_20 = 
+                                         ^
+  (1813,3064,273)x(1811,3061,274) -> (5969,14298,275)
+  Minimizing (5969,14298,275) -> (3191,8451,276)
+Automaton (3191,8451,276)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3191,8451,276)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,9485,246) -> (3349,9485,277)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,9485,277)
+[#1213->#1216]
+[#1214->#1223]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 226
+  ak_heading) & var_20 = l & var_21 = h & (var_20 <= var_21)))))));
+                                         ^
+  (3191,8451,276)x(3349,9485,277) -> (3885,11087,278)
+  Minimizing (3885,11087,278) -> (3034,7980,279)
+Automaton (3034,7980,279)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3034,7980,279)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,280)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,280)
+[#1099->#1223]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 106
+  ak_list) => ((~(ex1 h: $$<=h & h in T & type(h,yak_heading) & (ex1 var_20, v
+                                         ^
+  (1813,3064,272)x(5012,17953,280) -> (6941,23147,281)
+  Minimizing (6941,23147,281) -> (4170,14548,282)
+Automaton (4170,14548,282)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 128
+   $$<=h & h in T & type(h,yak_heading) & (ex1 var_20, var_21: type(var_20,yak
+                                         ^
+  (3034,7980,279)x(4170,14548,282) -> (14853,62106,283)
+  Minimizing (14853,62106,283) -> (7720,35466,284)
+Automaton (7720,35466,284)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1223 '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 83
+  <=l & l in T & type(l,yak_list) => ((~(ex1 h: $$<=h & h in T & type(h,yak_he
+                                         ^
+  (7720,35466,284) -> (4382,15399,286)
+  Minimizing (4382,15399,286) -> (4382,15399,287)
+Automaton (4382,15399,287)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 81
+  $$<=l & l in T & type(l,yak_list) => ((~(ex1 h: $$<=h & h in T & type(h,yak_
+                                         ^
+Automaton (4382,15399,287)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Copying (4166,14538,124) -> (4166,14538,288)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4166,14538,288)
+[#1115->#1216]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 77
+   l: $$<=l & l in T & type(l,yak_list) => ((~(ex1 h: $$<=h & h in T & type(h,
+                                         ^
+  (4166,14538,288)x(4382,15399,287) -> (4785,17009,289)
+  Minimizing (4785,17009,289) -> (4273,14966,290)
+Automaton (4273,14966,290)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 34
+  execute export ("formula4.gta", (all1 l: $$<=l & l in T & type(l,yak_list) =
+                                   ^
+Automaton (4273,14966,290)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Right-quotient
+Projecting #1216 '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 34
+  execute export ("formula4.gta", (all1 l: $$<=l & l in T & type(l,yak_list) =
+                                   ^
+  (4273,14966,290) -> (2603,6464,292)
+  Minimizing (2603,6464,292) -> (2601,6462,293)
+Automaton (2601,6462,293)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1379 column 34
+  execute export ("formula4.gta", (all1 l: $$<=l & l in T & type(l,yak_list) =
+                                   ^
+Automaton (2601,6462,293)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+-- Exporting 'formula4.gta' --
+Replacing indices (2601,6462,294)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+InStateSpace(#1239,[342])
+Automaton (1119,1676,296)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,297)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,297)
+[#710->#1239]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 107
+  k_bold) => ((~(ex1 p: $$<=p & p in T & type(p,yak_paragraph) & (ex1 var_22, 
+                                         ^
+  (1119,1676,296)x(1676,2792,297) -> (1967,3371,298)
+  Minimizing (1967,3371,298) -> (1824,3086,299)
+Automaton (1824,3086,299)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1824,3086,299) -> (1824,3086,300)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1824,3086,300)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1975,3389,160) -> (1975,3389,301)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,301)
+[#1156->#1232]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 175
+  var_22, var_23: type(var_22,yak_bold) & type(var_23,yak_paragraph) & var_22 
+                                         ^
+  (1824,3086,300)x(1975,3389,301) -> (6507,15792,302)
+  Minimizing (6507,15792,302) -> (3379,9013,303)
+Automaton (3379,9013,303)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3379,9013,303)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,9485,246) -> (3349,9485,304)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,9485,304)
+[#1213->#1232]
+[#1214->#1239]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 230
+  _paragraph) & var_22 = b & var_23 = p & (var_22 <= var_23)))))));
+                                         ^
+  (3379,9013,303)x(3349,9485,304) -> (3938,11246,305)
+  Minimizing (3938,11246,305) -> (2790,7252,306)
+Automaton (2790,7252,306)
+Resulting GTA:
+Accepting states: 
+Rejecting states: 0 
+Don't-care states: 1 
+Replacing indices (2790,7252,306)
+Resulting GTA:
+Accepting states: 
+Rejecting states: 0 
+Don't-care states: 1 
+Copying (5012,17953,86) -> (5012,17953,307)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,307)
+[#1099->#1239]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 106
+  ak_bold) => ((~(ex1 p: $$<=p & p in T & type(p,yak_paragraph) & (ex1 var_22,
+                                         ^
+  (1824,3086,299)x(5012,17953,307) -> (7006,23385,308)
+  Minimizing (7006,23385,308) -> (4192,14636,309)
+Automaton (4192,14636,309)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 130
+  $<=p & p in T & type(p,yak_paragraph) & (ex1 var_22, var_23: type(var_22,yak
+                                         ^
+  (2790,7252,306)x(4192,14636,309) -> (13682,56733,310)
+  Minimizing (13682,56733,310) -> (7234,33044,311)
+Automaton (7234,33044,311)
+Resulting GTA:
+Accepting states: 
+Rejecting states: 0 
+Don't-care states: 1 
+Right-quotient
+Projecting #1239 '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 83
+  <=b & b in T & type(b,yak_bold) => ((~(ex1 p: $$<=p & p in T & type(p,yak_pa
+                                         ^
+  (7234,33044,311) -> (3898,13466,313)
+  Minimizing (3898,13466,313) -> (3898,13466,314)
+Automaton (3898,13466,314)
+Resulting GTA:
+Accepting states: 
+Rejecting states: 0 
+Don't-care states: 1 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 81
+  $$<=b & b in T & type(b,yak_bold) => ((~(ex1 p: $$<=p & p in T & type(p,yak_
+                                         ^
+Automaton (3898,13466,314)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Copying (4494,15850,190) -> (4494,15850,315)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4494,15850,315)
+[#1156->#1232]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 77
+   b: $$<=b & b in T & type(b,yak_bold) => ((~(ex1 p: $$<=p & p in T & type(p,
+                                         ^
+  (4494,15850,315)x(3898,13466,314) -> (4494,15850,316)
+  Minimizing (4494,15850,316) -> (3898,13466,317)
+Automaton (3898,13466,317)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 34
+  execute export ("formula5.gta", (all1 b: $$<=b & b in T & type(b,yak_bold) =
+                                   ^
+Automaton (3898,13466,317)
+Resulting GTA:
+Accepting states: 
+Rejecting states: 0 
+Don't-care states: 1 
+Right-quotient
+Projecting #1232 '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 34
+  execute export ("formula5.gta", (all1 b: $$<=b & b in T & type(b,yak_bold) =
+                                   ^
+  (3898,13466,317) -> (2230,5345,319)
+  Minimizing (2230,5345,319) -> (2230,5345,320)
+Automaton (2230,5345,320)
+Resulting GTA:
+Accepting states: 
+Rejecting states: 0 
+Don't-care states: 1 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1381 column 34
+  execute export ("formula5.gta", (all1 b: $$<=b & b in T & type(b,yak_bold) =
+                                   ^
+Automaton (2230,5345,320)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+-- Exporting 'formula5.gta' --
+Replacing indices (2230,5345,321)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (4166,14538,124)
+[#1115->#1248]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,107)
+[#1115->#1248]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+InStateSpace(#1255,[514])
+Automaton (1119,1676,323)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,324)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,324)
+[#710->#1255]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 105
+  yak_list) => ((ex1 i: $$<=i & i in T & type(i,yak_list_item) & (ex1 var_24, 
+                                         ^
+  (1119,1676,323)x(1676,2792,324) -> (1946,3329,325)
+  Minimizing (1946,3329,325) -> (1811,3061,326)
+Automaton (1811,3061,326)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,326) -> (1811,3061,327)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,327)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 173
+  var_24, var_25: type(var_24,yak_list) & type(var_25,yak_list_item) & var_24 
+                                         ^
+  (1811,3061,327)x(1811,3061,107) -> (5963,14311,328)
+  Minimizing (5963,14311,328) -> (3189,8447,329)
+Automaton (3189,8447,329)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3189,8447,329)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,9485,246) -> (3349,9485,330)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,9485,330)
+[#1213->#1248]
+[#1214->#1255]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 228
+  _list_item) & var_24 = l & var_25 = i & (var_24 <= var_25))))));
+                                         ^
+  (3189,8447,329)x(3349,9485,330) -> (3883,11083,331)
+  Minimizing (3883,11083,331) -> (3032,7976,332)
+Automaton (3032,7976,332)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3032,7976,332)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,326) -> (1811,3061,333)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,334)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,334)
+[#1099->#1255]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 104
+  ,yak_list) => ((ex1 i: $$<=i & i in T & type(i,yak_list_item) & (ex1 var_24,
+                                         ^
+  (1811,3061,333)x(5012,17953,334) -> (6931,23124,335)
+  Minimizing (6931,23124,335) -> (4166,14538,336)
+Automaton (4166,14538,336)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4166,14538,336) -> (4166,14538,337)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 128
+  $<=i & i in T & type(i,yak_list_item) & (ex1 var_24, var_25: type(var_24,yak
+                                         ^
+  (3032,7976,332)x(4166,14538,337) -> (14835,62056,338)
+  Minimizing (14835,62056,338) -> (7716,35454,339)
+Automaton (7716,35454,339)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1255 '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 81
+  $$<=l & l in T & type(l,yak_list) => ((ex1 i: $$<=i & i in T & type(i,yak_li
+                                         ^
+  (7716,35454,339) -> (4377,15381,341)
+  Minimizing (4377,15381,341) -> (4375,15377,342)
+Automaton (4375,15377,342)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 77
+   l: $$<=l & l in T & type(l,yak_list) => ((ex1 i: $$<=i & i in T & type(i,ya
+                                         ^
+  (4166,14538,124)x(4375,15377,342) -> (4778,16987,343)
+  Minimizing (4778,16987,343) -> (4182,14605,344)
+Automaton (4182,14605,344)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 34
+  execute export ("formula6.gta", (all1 l: $$<=l & l in T & type(l,yak_list) =
+                                   ^
+Automaton (4182,14605,344)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Right-quotient
+Projecting #1248 '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 34
+  execute export ("formula6.gta", (all1 l: $$<=l & l in T & type(l,yak_list) =
+                                   ^
+  (4182,14605,344) -> (2514,6197,346)
+  Minimizing (2514,6197,346) -> (2512,6195,347)
+Automaton (2512,6195,347)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1383 column 34
+  execute export ("formula6.gta", (all1 l: $$<=l & l in T & type(l,yak_list) =
+                                   ^
+Automaton (2512,6195,347)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+-- Exporting 'formula6.gta' --
+Replacing indices (2512,6195,348)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Copying (1975,3389,160) -> (1975,3389,349)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,349)
+[#1156->#1264]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1975,3389,160)
+[#1156->#1271]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 178
+  var_26, var_27: type(var_26,yak_bold) & type(var_27,yak_bold) & var_26 = b1 
+                                         ^
+  (1975,3389,349)x(1975,3389,160) -> (7111,17380,350)
+  Minimizing (7111,17380,350) -> (3681,9923,351)
+Automaton (3681,9923,351)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3681,9923,351)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,8927,70)
+[#1113->#1264]
+[#1114->#1271]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 230
+  yak_bold) & var_26 = b1 & var_27 = b2 & (var_26 < var_27)))))));
+                                         ^
+  (3681,9923,351)x(3349,8927,70) -> (4539,12493,352)
+  Minimizing (4539,12493,352) -> (3178,8414,353)
+Automaton (3178,8414,353)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3178,8414,353)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (4494,15850,190) -> (4494,15850,354)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (4494,15850,354)
+[#1156->#1271]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 133
+   $$<=b2 & b2 in T & type(b2,yak_bold) & (ex1 var_26, var_27: type(var_26,yak
+                                         ^
+  (3178,8414,353)x(4494,15850,354) -> (16731,70916,355)
+  Minimizing (16731,70916,355) -> (8008,36914,356)
+Automaton (8008,36914,356)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1271 '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 87
+  1 & b1 in T & type(b1,yak_bold) => ((~(ex1 b2: $$<=b2 & b2 in T & type(b2,ya
+                                         ^
+  (8008,36914,356) -> (4670,16557,358)
+  Minimizing (4670,16557,358) -> (4670,16557,359)
+Automaton (4670,16557,359)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 85
+  =b1 & b1 in T & type(b1,yak_bold) => ((~(ex1 b2: $$<=b2 & b2 in T & type(b2,
+                                         ^
+Automaton (4670,16557,359)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Replacing indices (4494,15850,190)
+[#1156->#1264]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 81
+   $$<=b1 & b1 in T & type(b1,yak_bold) => ((~(ex1 b2: $$<=b2 & b2 in T & type
+                                         ^
+  (4494,15850,190)x(4670,16557,359) -> (5565,20134,360)
+  Minimizing (5565,20134,360) -> (4581,16201,361)
+Automaton (4581,16201,361)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 34
+  execute export ("formula7.gta", (all1 b1: $$<=b1 & b1 in T & type(b1,yak_bol
+                                   ^
+Automaton (4581,16201,361)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Right-quotient
+Projecting #1264 '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 34
+  execute export ("formula7.gta", (all1 b1: $$<=b1 & b1 in T & type(b1,yak_bol
+                                   ^
+  (4581,16201,361) -> (2913,7394,363)
+  Minimizing (2913,7394,363) -> (2913,7394,364)
+Automaton (2913,7394,364)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1385 column 34
+  execute export ("formula7.gta", (all1 b1: $$<=b1 & b1 in T & type(b1,yak_bol
+                                   ^
+Automaton (2913,7394,364)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+-- Exporting 'formula7.gta' --
+Replacing indices (2913,7394,365)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Replacing indices (4166,14538,336)
+[#1255->#1280]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+InStateSpace(#1287,[495])
+Automaton (1119,1676,367)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,368)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,368)
+[#710->#1287]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 112
+  t_item) => ((((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_2) & 
+                                         ^
+  (1119,1676,367)x(1676,2792,368) -> (1946,3329,369)
+  Minimizing (1946,3329,369) -> (1811,3061,370)
+Automaton (1811,3061,370)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,370) -> (1811,3061,371)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,371)
+[#1287->#1300]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Dot0(#1307,#1300)
+Automaton (1677,3351,373)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,374)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,374)
+[#710->#1300]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 300
+  var_29)))) | ((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_3) & 
+                                         ^
+  (1677,3351,373)x(1676,2792,374) -> (5024,11161,375)
+  Minimizing (5024,11161,375) -> (3137,7041,376)
+Automaton (3137,7041,376)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Dot1(#1294,#1287)
+Automaton (1677,3351,378)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1677,3351,378) -> (1677,3351,379)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Replacing indices (1677,3351,379)
+[#1287->#1307]
+[#1294->#1308]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 112
+  t_item) => ((((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_2) & 
+                                         ^
+  (3137,7041,376)x(1677,3351,379) -> (9406,27597,380)
+  Minimizing (9406,27597,380) -> (3313,9367,381)
+Automaton (3313,9367,381)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1307 '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 300
+  var_29)))) | ((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_3) & 
+                                         ^
+  (3313,9367,381) -> (3313,7907,383)
+  Minimizing (3313,7907,383) -> (3313,7907,384)
+Automaton (3313,7907,384)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3344,7015,46) -> (3344,7015,385)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3344,7015,385)
+[#710->#1308]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 300
+  var_29)))) | ((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_3) & 
+                                         ^
+  (3313,7907,384)x(3344,7015,385) -> (14416,45491,386)
+  Minimizing (14416,45491,386) -> (4712,14805,387)
+Automaton (4712,14805,387)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1308 '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 300
+  var_29)))) | ((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_3) & 
+                                         ^
+  (4712,14805,387) -> (3413,9511,389)
+  Minimizing (3413,9511,389) -> (3413,9511,390)
+Automaton (3413,9511,390)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3413,9511,390) -> (3413,9511,391)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 300
+  var_29)))) | ((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_3) & 
+                                         ^
+  (3413,9511,391)x(1811,3061,371) -> (5066,13214,392)
+  Minimizing (5066,13214,392) -> (2922,7496,393)
+Automaton (2922,7496,393)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,394)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,394)
+[#1099->#1300]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 299
+   var_29)))) | ((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_3) &
+                                         ^
+  (2922,7496,393)x(5012,17953,394) -> (7779,26513,395)
+  Minimizing (7779,26513,395) -> (4167,14545,396)
+Automaton (4167,14545,396)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,326)
+[#1255->#1280]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,370) -> (1811,3061,397)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,397)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 198
+  8, var_29: type(var_28,yak_list_item) & type(var_29,yak_flows) & var_28 = l 
+                                         ^
+  (1811,3061,397)x(1811,3061,326) -> (5963,14333,398)
+  Minimizing (5963,14333,398) -> (3189,8447,399)
+Automaton (3189,8447,399)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3189,8447,399)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3349,9485,246) -> (3349,9485,400)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,9485,400)
+[#1213->#1280]
+[#1214->#1287]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 249
+  ,yak_flows) & var_28 = l & var_29 = f & (var_28 <= var_29)))) | ((ex1 f: $$<
+                                         ^
+  (3189,8447,399)x(3349,9485,400) -> (3883,11083,401)
+  Minimizing (3883,11083,401) -> (3032,7976,402)
+Automaton (3032,7976,402)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3032,7976,402) -> (3032,7976,403)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3032,7976,403)
+[#1287->#1300]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 336
+   & variant(f,T,yak_flows,yak_flows_3) & (ex1 var_30, var_31: type(var_30,yak
+                                         ^
+  (4167,14545,396)x(3032,7976,403) -> (14838,62081,404)
+  Minimizing (14838,62081,404) -> (7717,35463,405)
+Automaton (7717,35463,405)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1300 '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 276
+  var_29 = f & (var_28 <= var_29)))) | ((ex1 f: $$<=f & f in T & variant(f,T,y
+                                         ^
+  (7717,35463,405) -> (4381,15397,407)
+  Minimizing (4381,15397,407) -> (4380,15395,408)
+Automaton (4380,15395,408)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3032,7976,402)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1676,2792,4) -> (1676,2792,409)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,409)
+[#710->#1287]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 112
+  t_item) => ((((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_2) & 
+                                         ^
+  (1677,3351,378)x(1676,2792,409) -> (5024,11161,410)
+  Minimizing (5024,11161,410) -> (3027,6931,411)
+Automaton (3027,6931,411)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3344,7015,46)
+[#710->#1294]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 112
+  t_item) => ((((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_2) & 
+                                         ^
+  (3027,6931,411)x(3344,7015,46) -> (13409,41009,412)
+  Minimizing (13409,41009,412) -> (4606,14084,413)
+Automaton (4606,14084,413)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1294 '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 112
+  t_item) => ((((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_2) & 
+                                         ^
+  (4606,14084,413) -> (3269,8911,415)
+  Minimizing (3269,8911,415) -> (3269,8911,416)
+Automaton (3269,8911,416)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3269,8911,416) -> (3269,8911,417)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 112
+  t_item) => ((((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_2) & 
+                                         ^
+  (1811,3061,370)x(3269,8911,417) -> (4922,12614,418)
+  Minimizing (4922,12614,418) -> (2921,7493,419)
+Automaton (2921,7493,419)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,420)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,420)
+[#1099->#1287]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 111
+  st_item) => ((((ex1 f: $$<=f & f in T & variant(f,T,yak_flows,yak_flows_2) &
+                                         ^
+  (2921,7493,419)x(5012,17953,420) -> (7776,26501,421)
+  Minimizing (7776,26501,421) -> (4166,14541,422)
+Automaton (4166,14541,422)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 148
+   & variant(f,T,yak_flows,yak_flows_2) & (ex1 var_28, var_29: type(var_28,yak
+                                         ^
+  (3032,7976,402)x(4166,14541,422) -> (14835,62067,423)
+  Minimizing (14835,62067,423) -> (7716,35458,424)
+Automaton (7716,35458,424)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1287 '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 88
+   l in T & type(l,yak_list_item) => ((((ex1 f: $$<=f & f in T & variant(f,T,y
+                                         ^
+  (7716,35458,424) -> (4380,15393,426)
+  Minimizing (4380,15393,426) -> (4379,15391,427)
+Automaton (4379,15391,427)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product | '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 273
+   & var_29 = f & (var_28 <= var_29)))) | ((ex1 f: $$<=f & f in T & variant(f,
+                                         ^
+  (4380,15395,408)x(4379,15391,427) -> (5341,19243,428)
+  Minimizing (5341,19243,428) -> (4379,15393,429)
+Automaton (4379,15393,429)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 82
+  $<=l & l in T & type(l,yak_list_item) => ((((ex1 f: $$<=f & f in T & variant
+                                         ^
+  (4166,14538,336)x(4379,15393,429) -> (4782,17003,430)
+  Minimizing (4782,17003,430) -> (4170,14557,431)
+Automaton (4170,14557,431)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 34
+  execute export ("formula8.gta", (all1 l: $$<=l & l in T & type(l,yak_list_it
+                                   ^
+Automaton (4170,14557,431)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Right-quotient
+Projecting #1280 '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 34
+  execute export ("formula8.gta", (all1 l: $$<=l & l in T & type(l,yak_list_it
+                                   ^
+  (4170,14557,431) -> (2502,6161,433)
+  Minimizing (2502,6161,433) -> (2500,6159,434)
+Automaton (2500,6159,434)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1387 column 34
+  execute export ("formula8.gta", (all1 l: $$<=l & l in T & type(l,yak_list_it
+                                   ^
+Automaton (2500,6159,434)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+-- Exporting 'formula8.gta' --
+Replacing indices (2500,6159,435)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+InStateSpace(#1314,[380])
+Automaton (1119,1676,437)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Copying (1676,2792,4) -> (1676,2792,438)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Replacing indices (1676,2792,438)
+[#710->#1314]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 59
+  execute export ("formula9.gta", (all1 t: $$<=t & t in T & type(t,yak_table_d
+                                                            ^
+  (1119,1676,437)x(1676,2792,438) -> (1946,3329,439)
+  Minimizing (1946,3329,439) -> (1811,3061,440)
+Automaton (1811,3061,440)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,440) -> (1811,3061,441)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,442)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,442)
+[#1099->#1314]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 58
+  execute export ("formula9.gta", (all1 t: $$<=t & t in T & type(t,yak_table_d
+                                                           ^
+  (1811,3061,441)x(5012,17953,442) -> (6931,23124,443)
+  Minimizing (6931,23124,443) -> (4166,14538,444)
+Automaton (4166,14538,444)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3413,9511,390)
+[#1300->#1334]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+InStateSpace(#1321,[110])
+Automaton (1119,1676,446)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 
+Replacing indices (1676,2792,4)
+[#710->#1321]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 113
+  e_data) => ((((ex1 b: $$<=b & b in T & variant(b,T,yak_body_contents,yak_bod
+                                         ^
+  (1119,1676,446)x(1676,2792,4) -> (1946,3329,447)
+  Minimizing (1946,3329,447) -> (1811,3061,448)
+Automaton (1811,3061,448)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,448) -> (1811,3061,449)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,449)
+[#1321->#1334]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 326
+  var_33)))) | ((ex1 b: $$<=b & b in T & variant(b,T,yak_body_contents,yak_bod
+                                         ^
+  (1811,3061,449)x(3413,9511,390) -> (5066,13214,450)
+  Minimizing (5066,13214,450) -> (2922,7496,451)
+Automaton (2922,7496,451)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (5012,17953,86) -> (5012,17953,452)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,452)
+[#1099->#1334]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 325
+   var_33)))) | ((ex1 b: $$<=b & b in T & variant(b,T,yak_body_contents,yak_bo
+                                         ^
+  (2922,7496,451)x(5012,17953,452) -> (7779,26513,453)
+  Minimizing (7779,26513,453) -> (4167,14545,454)
+Automaton (4167,14545,454)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,440)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (1811,3061,448) -> (1811,3061,455)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (1811,3061,455)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 216
+  , var_33: type(var_32,yak_table_data) & type(var_33,yak_body_contents) & var
+                                         ^
+  (1811,3061,455)x(1811,3061,440) -> (5963,14273,456)
+  Minimizing (5963,14273,456) -> (3189,8447,457)
+Automaton (3189,8447,457)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3189,8447,457)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3349,9485,246)
+[#1213->#1314]
+[#1214->#1321]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 275
+  y_contents) & var_32 = t & var_33 = b & (var_32 <= var_33)))) | ((ex1 b: $$<
+                                         ^
+  (3189,8447,457)x(3349,9485,246) -> (3883,11083,458)
+  Minimizing (3883,11083,458) -> (3032,7976,459)
+Automaton (3032,7976,459)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Copying (3032,7976,459) -> (3032,7976,460)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3032,7976,460)
+[#1321->#1334]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 378
+  ak_body_contents,yak_body_contents_3) & (ex1 var_34, var_35: type(var_34,yak
+                                         ^
+  (4167,14545,454)x(3032,7976,460) -> (14838,62081,461)
+  Minimizing (14838,62081,461) -> (7717,35463,462)
+Automaton (7717,35463,462)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1334 '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 302
+  var_33 = b & (var_32 <= var_33)))) | ((ex1 b: $$<=b & b in T & variant(b,T,y
+                                         ^
+  (7717,35463,462) -> (4381,15397,464)
+  Minimizing (4381,15397,464) -> (4380,15395,465)
+Automaton (4380,15395,465)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3032,7976,459)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (3269,8911,416)
+[#1287->#1321]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 113
+  e_data) => ((((ex1 b: $$<=b & b in T & variant(b,T,yak_body_contents,yak_bod
+                                         ^
+  (1811,3061,448)x(3269,8911,416) -> (4922,12614,466)
+  Minimizing (4922,12614,466) -> (2921,7493,467)
+Automaton (2921,7493,467)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Replacing indices (5012,17953,86)
+[#1099->#1321]
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 112
+  le_data) => ((((ex1 b: $$<=b & b in T & variant(b,T,yak_body_contents,yak_bo
+                                         ^
+  (2921,7493,467)x(5012,17953,86) -> (7776,26501,468)
+  Minimizing (7776,26501,468) -> (4166,14541,469)
+Automaton (4166,14541,469)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product & '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 165
+  ak_body_contents,yak_body_contents_2) & (ex1 var_32, var_33: type(var_32,yak
+                                         ^
+  (3032,7976,459)x(4166,14541,469) -> (14835,62067,470)
+  Minimizing (14835,62067,470) -> (7716,35458,471)
+Automaton (7716,35458,471)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Right-quotient
+Projecting #1321 '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 89
+  t in T & type(t,yak_table_data) => ((((ex1 b: $$<=b & b in T & variant(b,T,y
+                                         ^
+  (7716,35458,471) -> (4380,15393,473)
+  Minimizing (4380,15393,473) -> (4379,15391,474)
+Automaton (4379,15391,474)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product | '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 299
+   & var_33 = b & (var_32 <= var_33)))) | ((ex1 b: $$<=b & b in T & variant(b,
+                                         ^
+  (4380,15395,465)x(4379,15391,474) -> (5341,19243,475)
+  Minimizing (5341,19243,475) -> (4379,15393,476)
+Automaton (4379,15393,476)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Product => '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 83
+  <=t & t in T & type(t,yak_table_data) => ((((ex1 b: $$<=b & b in T & variant
+                                         ^
+  (4166,14538,444)x(4379,15393,476) -> (4782,17003,477)
+  Minimizing (4782,17003,477) -> (4170,14557,478)
+Automaton (4170,14557,478)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 34
+  execute export ("formula9.gta", (all1 t: $$<=t & t in T & type(t,yak_table_d
+                                   ^
+Automaton (4170,14557,478)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Right-quotient
+Projecting #1314 '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 34
+  execute export ("formula9.gta", (all1 t: $$<=t & t in T & type(t,yak_table_d
+                                   ^
+  (4170,14557,478) -> (2502,6161,480)
+  Minimizing (2502,6161,480) -> (2500,6159,481)
+Automaton (2500,6159,481)
+Resulting GTA:
+Accepting states: 1 
+Rejecting states: 0 
+Don't-care states: 2 
+Negation '[ws2s] anders-mona/[ws2s] html3.mona' line 1389 column 34
+  execute export ("formula9.gta", (all1 t: $$<=t & t in T & type(t,yak_table_d
+                                   ^
+Automaton (2500,6159,481)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+-- Exporting 'formula9.gta' --
+Replacing indices (2500,6159,482)
+[#709->#0]
+[#710->#1]
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 1 
+Don't-care states: 2 
+Product &
+  (2230,5345,51)x(560,560,53) -> (2230,5345,483)
+  Minimizing (2230,5345,483) -> (2230,5345,484)
+Automaton (2230,5345,484)
+Resulting GTA:
+Accepting states: 0 
+Rejecting states: 
+Don't-care states: 1 
+Total automaton construction time: 00:00:29.97
+Automaton has 2230 states and 5345 BDD nodes
+ANALYSIS
+Formula is valid
+A satisfying example is:
+ T = uT:yak_start_1(yak_html_document_1(yak_html_doc_head_1(yak_head_tags_3(yak_head_tag_1)),yak_html_doc_body_1(yak_banner_1,yak_body_contents_1)))
+ $$ = uT:
+ pred_here = {}
+Minimizations:   151
+Projections:     33
+Products:        113
+Copies:          104
+Replaces:        111
+Right-quotients: 33
+Negations:       25
+Largest number of states in a minimized automaton: 28160, BDD nodes: 190242
+Maximum number of automata in memory: 22
+Total time: 00:00:30.00

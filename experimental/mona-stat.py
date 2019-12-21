@@ -181,7 +181,8 @@ def is_initial_automaton(line):
                         "Singleton", "BoolVar", "In(", "Eq1", "Eq2", "Sub2",
                         "Less1", "LessEq1", "EqPlus2", "EqMinus2", "EqMin",
                         "EqMax", "EqPlus1", "EqMinus1", "Union", "Inter",
-                        "SetMinus", "EqPlusModulo", "EqMinusModulo", "PresbConst"]
+                        "SetMinus", "EqPlusModulo", "EqMinusModulo", "PresbConst",
+                        "InStateSpace", "Root", "WellFormedTree"]
     return any([line.startswith(automaton) for automaton in initial_automata])
 
 
@@ -196,7 +197,10 @@ def proc_init(lines, i, names, variables):
 
 
 def replace_names(fv, variables):
-    return sorted([variables[x] for x in fv])
+    try:
+        return sorted([variables[x] for x in fv])
+    except:
+        return sorted(fv)
 
 
 def proc_copy(lines, i, names):
@@ -322,7 +326,7 @@ def get_fv(lines, parser):
             _, sym, _ = ret
             fv = fv.union(symbols_free_vars(sym))
     else:
-        for line in lines[3:]:
+        for line in lines[4:]:
             if line == "" or re.match("(State space.*)|(Initial state:.*)|(Transitions:)", line) is not None:
                 continue
             ret = parse_gta_trans(line)
